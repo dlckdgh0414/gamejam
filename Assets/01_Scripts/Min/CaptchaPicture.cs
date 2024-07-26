@@ -3,43 +3,60 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
-public enum ImageType
-{
-    Changho,
-    Test1
-}
+using System.Text.RegularExpressions;
+using System.Linq;
 
 public class CaptchaPicture : MonoBehaviour
 {
-    private Button[] _correctPics;
-    [SerializeField] private Sprite[] _sprite;
-    [SerializeField] private Sprite[] _images;
+    public CardSOList cardList;
+    private CardSO _currentCard;
+    private List<CardSO> _cardList = new List<CardSO>();
+    private List<int> _selectedCard = new List<int>();
 
-    private void Start()
+    private void Awake()
     {
+        foreach (CardSO card in cardList.list)
+        {
+            _cardList.Add(card);
+        }
+
         Initialize();
     }
 
     private void Initialize()
     {
+        int rand = Random.Range(0, _cardList.Count);
+        _currentCard = _cardList[rand];
+
         for (int i = 0; i < 16; i++)
         {
             GameObject.Find($"Image ({i})")
-                .GetComponent<Image>().sprite = _images[i];
+                .GetComponent<Image>().sprite = _cardList[rand].sprite[i];
         }
     }
 
-    private void OnImageClick()
+    public void OnCardClick()
     {
-        Button button = EventSystem.current
-            .currentSelectedGameObject.GetComponent<Button>();
+        Image image = EventSystem.current
+            .currentSelectedGameObject.GetComponent<Image>();
 
+        int n = int.Parse(Regex.Replace(image.name, @"\D", ""));
+        image.color = Color.HSVToRGB(0, 0, 0.5f);
 
+        if (!_selectedCard.Contains(n))
+            _selectedCard.Add(n);
     }
 
-    private void OnSkipClick()
+    public void OnSkipClick()
     {
+        _selectedCard.Sort();
 
+        bool isEaual = Enumerable.SequenceEqual
+            (_selectedCard, _currentCard.correctCard);
+
+        if (isEaual)
+            Debug.Log("성공");
+        else
+            Debug.Log("실패");
     }
 }
