@@ -41,10 +41,17 @@ public class CaptchaPicture : MonoBehaviour
             .currentSelectedGameObject.GetComponent<Image>();
 
         int n = int.Parse(Regex.Replace(image.name, @"\D", ""));
-        image.color = Color.HSVToRGB(0, 0, 0.5f);
 
         if (!_selectedCard.Contains(n))
+        {
             _selectedCard.Add(n);
+            image.color = Color.HSVToRGB(0, 0, 0.5f);
+        }
+        else
+        {
+            _selectedCard.Remove(n);
+            image.color = Color.HSVToRGB(0, 0, 1f);
+        }
     }
 
     public void OnSkipClick()
@@ -55,8 +62,18 @@ public class CaptchaPicture : MonoBehaviour
             (_selectedCard, _currentCard.correctCard);
 
         if (isEaual)
-            Debug.Log("성공");
+            OnSucess();
         else
-            Debug.Log("실패");
+            OnFail();
+    }
+
+    private void OnSucess()
+    {
+        Debug.Log("성공");
+    }
+
+    private void OnFail()
+    {
+        Debug.Log("실패");
     }
 }
