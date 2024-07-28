@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2bfd1d431ff3144abebeb128b20c485, type: 3}
+  m_Name: ChangHo
+  m_EditorClassIdentifier: 
+  sprite:
+  - {fileID: -609165601, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -440274144, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -135047289, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -328396843, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: 895788858, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -105906582, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: 508767744, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: 1225371019, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: 478784418, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -1100426696, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -1343948707, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -1456458899, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: 836608764, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: 7267277, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -1709892243, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -1341805608, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  correctCard: 0100000002000000050000000600000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000
