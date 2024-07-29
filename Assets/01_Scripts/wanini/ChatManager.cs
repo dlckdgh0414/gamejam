@@ -20,7 +20,7 @@ public class ChatManager : MonoBehaviour
             instance = this;
         }
 
-        StartCoroutine(Test());
+     //  StartCoroutine(Test());
     }
 
     public IEnumerator Test()
@@ -54,7 +54,7 @@ public class ChatManager : MonoBehaviour
     }
     public void CloseChat()
     {
-        chatwindow.DOAnchorPos(new Vector2(18.72998f, -787), 1).SetEase(Ease.Flash);
+        chatwindow.DOAnchorPos(new Vector2(18.72998f, -787), 0.5f).SetEase(Ease.Flash);
     }
 
 
