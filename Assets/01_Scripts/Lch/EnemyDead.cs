@@ -25,11 +25,17 @@ public class EnemyDead : EnemyState<EnemyEnum>
     }
 
     public override void UpdateState()
-    { 
+    {
         base.UpdateState();
-        if(_endTriggerCalled && !_onExplosion)
+        if (_endTriggerCalled && !_onExplosion)
         {
             _onExplosion = true;
+            PlayExplosion();
         }
+    }
+    private void PlayExplosion()
+    {
+        _agent.PlayEffectEvent?.Invoke();
+        EffectPlay.Intacne.ParticlePool.Push(EffectPlay.Intacne.ParticlePrfab);
     }
 }

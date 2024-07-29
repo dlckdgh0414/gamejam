@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class PlayEffectFeedback : Feedback
 {
-    [SerializeField] private string[] _effctName;
+    EffectPlay effect;
+
+    private void Awake()
+    {
+        effect = GetComponent<EffectPlay>();
+    }
+
     public override void PlayFeedback()
     {
-      
+        EffectPlay.Intacne.ParticlePool.Pop();
+         effect.SetPositionAndPlay(transform.position);
     }
 
     public override void StopFeedback()
