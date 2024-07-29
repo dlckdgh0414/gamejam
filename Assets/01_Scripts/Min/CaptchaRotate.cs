@@ -44,10 +44,18 @@ public class CaptchaRotate : MonoBehaviour
     public void OnCheck()
     {
         if (_currentAngle.z == 0)
-        {
-            Debug.Log("성공");
-        }
+            OnSucess();
         else
-            Debug.Log("실패");
+            OnFail();
+    }
+
+    private void OnSucess() //성공했을때
+    {
+        Debug.Log("성공");
+    }
+
+    private void OnFail() //실패했을때
+    {
+        Debug.Log("실패");
     }
 }
