@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private LayerMask targetLayer;
     public bool canAttack = false;
 
-    private Collider2D target { get; set; }
+    private Collider2D target { get; set; } = null;
 
     private void Start()
     {
@@ -28,6 +28,7 @@ public class PlayerAttack : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             print("°¨Áö");
+            canAttack = true;
             target = collider;
         }
     }
@@ -38,6 +39,9 @@ public class PlayerAttack : MonoBehaviour
         {
             canAttack = false;
             transform.position = target.transform.position;
+            target.transform.GetComponent<EnemySetting>().OnDeadEvent?.Invoke();
+            Destroy(target.transform.Find("Head").gameObject);
+            GetComponent<AudioSource>().Play();
         }
     }
 }
