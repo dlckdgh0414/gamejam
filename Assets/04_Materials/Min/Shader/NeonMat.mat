@@ -61,6 +61,11 @@ Material:
     - _Power: 4.89
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Strength: 2.5
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 1, g: 0.78966343, b: 0.75, a: 0}
+=======
+    - _Color: {r: 47.93726, g: 47.93726, b: 47.93726, a: 1}
+>>>>>>> Base
   m_BuildTextureStacks: []

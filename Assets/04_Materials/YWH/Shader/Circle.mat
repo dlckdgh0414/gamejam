@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Circle
-  m_Shader: {fileID: -6465566751694194690, guid: 68eb5d066bf5e2746900ec0adbff4154, type: 3}
-  m_Parent: {fileID: -876546973899608171, guid: 68eb5d066bf5e2746900ec0adbff4154, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 902f21aa82bb98544978d066ade9c11c, type: 3}
+  m_Parent: {fileID: -876546973899608171, guid: 902f21aa82bb98544978d066ade9c11c, type: 3}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []

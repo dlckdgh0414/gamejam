@@ -1,0 +1,49 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FuelHandler : MonoBehaviour
+{
+    public event Action<int> OnFuelChanged;
+
+    [Header("Values")]
+    public bool active = true;
+    public int fuel;
+    public int maxFuel = 100;
+
+    [Header("Rates")]
+    public float decreasePerSeconds = 1f;
+    public int decreaseAmount = 1;
+    private WaitForSecondsRealtime waitForSecondsRealtime;
+
+    private void Awake()
+    {
+        waitForSecondsRealtime = new WaitForSecondsRealtime(decreasePerSeconds);
+        fuel = maxFuel;
+        StartCoroutine(DecreaseFuel(fuel));
+
+    }
+
+    public void ChangeFuelDecreasePerSeconds(float time)
+    {
+        waitForSecondsRealtime.waitTime = time;
+    }
+
+    private IEnumerator DecreaseFuel(int _fuel)
+    {
+        if (!(fuel - decreaseAmount < 0) && active)
+        {
+            fuel -= decreaseAmount;
+            OnFuelChanged?.Invoke(fuel);
+            yield return waitForSecondsRealtime;
+            StartCoroutine(DecreaseFuel(fuel));
+        }else
+        {
+            fuel = 0;
+            OnFuelChanged?.Invoke(fuel);
+            active = false;
+            Time.timeScale = 0;
+        }
+    }
+}

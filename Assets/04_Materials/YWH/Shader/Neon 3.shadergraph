@@ -10,10 +10,14 @@
             "m_Id": "e05a93c34f3c4aaba48a90f485ca841b"
         },
         {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
             "m_Id": "8db9661fef6749f2a475bf0d0e5759cb"
         },
         {
             "m_Id": "59d664db9012483a9ea79e90854fb036"
+=======
+            "m_Id": "b9b69bcec1914a22a72eb22fc04b542d"
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
         }
     ],
     "m_Keywords": [],
@@ -49,6 +53,7 @@
             "m_Id": "96720493dbe24014a4ee0b4734d99f5e"
         },
         {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
             "m_Id": "050b5fcd1b564772abc026971485f725"
         },
         {
@@ -65,6 +70,15 @@
         },
         {
             "m_Id": "20ef60bec22b43f0a7810a6151742df3"
+=======
+            "m_Id": "96720493dbe24014a4ee0b4734d99f5e"
+        },
+        {
+            "m_Id": "760b4fbf0d354feeb8fd5f2099ee239e"
+        },
+        {
+            "m_Id": "69b3536390174011be0a538a2ee490bd"
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
         }
     ],
     "m_GroupDatas": [],
@@ -131,7 +145,7 @@
                 "m_Node": {
                     "m_Id": "384285ca991546d482ca7c4eaf7cac3f"
                 },
-                "m_SlotId": 7
+                "m_SlotId": 4
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -149,7 +163,11 @@
             },
             "m_InputSlot": {
                 "m_Node": {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
                     "m_Id": "db0c411230c34bc9b85017a5f058f8d2"
+=======
+                    "m_Id": "69b3536390174011be0a538a2ee490bd"
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
                 },
                 "m_SlotId": 1
             }
@@ -157,6 +175,7 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
                     "m_Id": "bbf8759372be4ae2b2d80784aa27cfcc"
                 },
                 "m_SlotId": 0
@@ -164,6 +183,15 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "db0c411230c34bc9b85017a5f058f8d2"
+=======
+                    "m_Id": "69b3536390174011be0a538a2ee490bd"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "4e2f73e1eed145b38c90e486cabb28b8"
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
                 },
                 "m_SlotId": 0
             }
@@ -171,7 +199,25 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
                     "m_Id": "d59b006f671140fa835a5c0acbb62734"
+=======
+                    "m_Id": "760b4fbf0d354feeb8fd5f2099ee239e"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "69b3536390174011be0a538a2ee490bd"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "d2002d6d6bdb4feebbc14c2fd9e34172"
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
                 },
                 "m_SlotId": 0
             },
@@ -213,8 +259,13 @@
     ],
     "m_VertexContext": {
         "m_Position": {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
             "x": 408.0001525878906,
             "y": -82.00000762939453
+=======
+            "x": 176.66673278808595,
+            "y": -132.00001525878907
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
         },
         "m_Blocks": [
             {
@@ -230,8 +281,13 @@
     },
     "m_FragmentContext": {
         "m_Position": {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
             "x": 407.9999694824219,
             "y": 150.99998474121095
+=======
+            "x": -62.66664505004883,
+            "y": 94.66663360595703
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
         },
         "m_Blocks": [
             {
@@ -407,10 +463,14 @@
             "m_Id": "e05a93c34f3c4aaba48a90f485ca841b"
         },
         {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
             "m_Id": "8db9661fef6749f2a475bf0d0e5759cb"
         },
         {
             "m_Id": "59d664db9012483a9ea79e90854fb036"
+=======
+            "m_Id": "b9b69bcec1914a22a72eb22fc04b542d"
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
         }
     ]
 }
@@ -897,8 +957,13 @@
 
 {
     "m_SGVersion": 0,
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "5d48d68059ad45f481ad577475d4b091",
+=======
+    "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
+    "m_ObjectId": "5cde7bf21b934a248d90110fc83e0db9",
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
     "m_Id": 1,
     "m_DisplayName": "B",
     "m_SlotType": 0,
@@ -906,6 +971,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
         "x": 0.0,
         "y": 0.0,
         "z": 0.0,
@@ -916,6 +982,42 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+=======
+        "e00": 2.0,
+        "e01": 2.0,
+        "e02": 2.0,
+        "e03": 2.0,
+        "e10": 2.0,
+        "e11": 2.0,
+        "e12": 2.0,
+        "e13": 2.0,
+        "e20": 2.0,
+        "e21": 2.0,
+        "e22": 2.0,
+        "e23": 2.0,
+        "e30": 2.0,
+        "e31": 2.0,
+        "e32": 2.0,
+        "e33": 2.0
+    },
+    "m_DefaultValue": {
+        "e00": 1.0,
+        "e01": 0.0,
+        "e02": 0.0,
+        "e03": 0.0,
+        "e10": 0.0,
+        "e11": 1.0,
+        "e12": 0.0,
+        "e13": 0.0,
+        "e20": 0.0,
+        "e21": 0.0,
+        "e22": 1.0,
+        "e23": 0.0,
+        "e30": 0.0,
+        "e31": 0.0,
+        "e32": 0.0,
+        "e33": 1.0
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
     }
 }
 
@@ -946,10 +1048,144 @@
 
 {
     "m_SGVersion": 0,
+<<<<<<< HEAD:Assets/04_Materials/YWH/Shader/Neon 3.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "63e0ffc7efc943af9cd9dcf170fb0062",
     "m_Id": 2,
     "m_DisplayName": "Out",
+=======
+    "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
+    "m_ObjectId": "69b3536390174011be0a538a2ee490bd",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Multiply",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -229.33335876464845,
+            "y": -147.3333282470703,
+            "width": 131.33334350585938,
+            "height": 120.00001525878906
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "c3ea6ae9d974409cae8b7765c07dd697"
+        },
+        {
+            "m_Id": "5cde7bf21b934a248d90110fc83e0db9"
+        },
+        {
+            "m_Id": "6bdbb81a41864d628d643b88af80ff53"
+        }
+    ],
+    "synonyms": [
+        "multiplication",
+        "times",
+        "x"
+    ],
+    "m_Precision": 0,
+    "m_PreviewExpanded": false,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
+    "m_ObjectId": "6bdbb81a41864d628d643b88af80ff53",
+    "m_Id": 2,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "e00": 0.0,
+        "e01": 0.0,
+        "e02": 0.0,
+        "e03": 0.0,
+        "e10": 0.0,
+        "e11": 0.0,
+        "e12": 0.0,
+        "e13": 0.0,
+        "e20": 0.0,
+        "e21": 0.0,
+        "e22": 0.0,
+        "e23": 0.0,
+        "e30": 0.0,
+        "e31": 0.0,
+        "e32": 0.0,
+        "e33": 0.0
+    },
+    "m_DefaultValue": {
+        "e00": 1.0,
+        "e01": 0.0,
+        "e02": 0.0,
+        "e03": 0.0,
+        "e10": 0.0,
+        "e11": 1.0,
+        "e12": 0.0,
+        "e13": 0.0,
+        "e20": 0.0,
+        "e21": 0.0,
+        "e22": 1.0,
+        "e23": 0.0,
+        "e30": 0.0,
+        "e31": 0.0,
+        "e32": 0.0,
+        "e33": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "760b4fbf0d354feeb8fd5f2099ee239e",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -394.0000305175781,
+            "y": -177.33334350585938,
+            "width": 122.00003051757813,
+            "height": 35.99998474121094
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "e39f6c8607d545838ccdf3b3be1a2074"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "b9b69bcec1914a22a72eb22fc04b542d"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "7de7841f496b4d4394a9095b5a4e66ae",
+    "m_Id": 0,
+    "m_DisplayName": "Color",
+>>>>>>> Base:Assets/04_Materials/Min/Shader/Neon.shadergraph
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1201,6 +1437,82 @@
     },
     "isMainColor": false,
     "m_ColorMode": 1
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "b9b69bcec1914a22a72eb22fc04b542d",
+    "m_Guid": {
+        "m_GuidSerialized": "0c9838aa-3d19-4400-bbae-c2a32fb410e4"
+    },
+    "m_Name": "Strength",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Strength",
+    "m_DefaultReferenceName": "_Strength",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
+    "m_ObjectId": "c3ea6ae9d974409cae8b7765c07dd697",
+    "m_Id": 0,
+    "m_DisplayName": "A",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "A",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "e00": 0.0,
+        "e01": 0.0,
+        "e02": 0.0,
+        "e03": 0.0,
+        "e10": 0.0,
+        "e11": 0.0,
+        "e12": 0.0,
+        "e13": 0.0,
+        "e20": 0.0,
+        "e21": 0.0,
+        "e22": 0.0,
+        "e23": 0.0,
+        "e30": 0.0,
+        "e31": 0.0,
+        "e32": 0.0,
+        "e33": 0.0
+    },
+    "m_DefaultValue": {
+        "e00": 1.0,
+        "e01": 0.0,
+        "e02": 0.0,
+        "e03": 0.0,
+        "e10": 0.0,
+        "e11": 1.0,
+        "e12": 0.0,
+        "e13": 0.0,
+        "e20": 0.0,
+        "e21": 0.0,
+        "e22": 1.0,
+        "e23": 0.0,
+        "e30": 0.0,
+        "e31": 0.0,
+        "e32": 0.0,
+        "e33": 1.0
+    }
 }
 
 {
@@ -1678,6 +1990,21 @@
     "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "e39f6c8607d545838ccdf3b3be1a2074",
+    "m_Id": 0,
+    "m_DisplayName": "Strength",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
