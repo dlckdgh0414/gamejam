@@ -9,7 +9,7 @@ public class FuelHandler : MonoBehaviour
 
     [Header("Values")]
     public bool active = true;
-    [SerializeField] private int fuel;
+    public int fuel;
     public int maxFuel = 100;
 
     [Header("Rates")]
@@ -22,6 +22,7 @@ public class FuelHandler : MonoBehaviour
         waitForSecondsRealtime = new WaitForSecondsRealtime(decreasePerSeconds);
         fuel = maxFuel;
         StartCoroutine(DecreaseFuel(fuel));
+
     }
 
     public void ChangeFuelDecreasePerSeconds(float time)
@@ -42,6 +43,7 @@ public class FuelHandler : MonoBehaviour
             fuel = 0;
             OnFuelChanged?.Invoke(fuel);
             active = false;
+            Time.timeScale = 0;
         }
     }
 }
