@@ -27,7 +27,7 @@ public class Enemy : EnemySetting
 
         StateMachine.AddState(EnemyEnum.Idle, new EnemyIdle(this, StateMachine, "Idle"));
         StateMachine.AddState(EnemyEnum.Walk, new EnemyWalk(this, StateMachine, "Walk"));
-        StateMachine.AddState(EnemyEnum.Dead, new EnemyFaint(this, StateMachine, "Dead"));
+        StateMachine.AddState(EnemyEnum.Dead, new EnemyDead(this, StateMachine, "Dead"));
 
     }
 
