@@ -3545,7 +3545,7 @@ GameObject:
   - component: {fileID: 1561372558}
   - component: {fileID: 1561372556}
   - component: {fileID: 1561372552}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3835,7 +3835,7 @@ GameObject:
   - component: {fileID: 1571059234}
   - component: {fileID: 1571059239}
   - component: {fileID: 1571059238}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
