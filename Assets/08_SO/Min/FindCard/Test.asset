@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5718251d8898294b8d337bacf314f9d, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: 
-  sprite: []
-  correctNumber: 0
+  sprite:
+  - {fileID: 895788858, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -440274144, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -135047289, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -328396843, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  - {fileID: -609165601, guid: 3674cc7234823524199283ceac2246c0, type: 3}
+  correctSprite: {fileID: 21300000, guid: 91da85a25a9ef5146ab71b9c482f94ea, type: 3}
