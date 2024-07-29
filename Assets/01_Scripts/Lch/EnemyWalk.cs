@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyWalk : EnemyState<EnemyEnum>
 {
     Vector2 dir;
-    public EnemyWalk(EnemyAgent owner, StateMachine<EnemyEnum> state, string animHashName) : base(owner, state, animHashName)
+    public EnemyWalk(EnemySetting owner, StateMachine<EnemyEnum> state, string animHashName) : base(owner, state, animHashName)
     {
     }
 
@@ -23,6 +23,6 @@ public class EnemyWalk : EnemyState<EnemyEnum>
     public override void UpdateState()
     {
         base.UpdateState();
-        _agent.Movement.EnemyMove();
+        _agent.EnemyMove();
     }
 }
