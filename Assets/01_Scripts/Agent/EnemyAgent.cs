@@ -9,6 +9,8 @@ public abstract class EnemyAgent : MonoBehaviour
 
     public bool IsDie { get; protected set; }
 
+    public bool CanStateChangeble { get; protected set; } = true;
+
     protected virtual void Awake()
     {
         Movement = GetComponent<EnemyMovement>();
@@ -17,5 +19,5 @@ public abstract class EnemyAgent : MonoBehaviour
         Animator = transform.Find("Visual").GetComponent<Animator>();
     }
 
-    public abstract void AnimationEndTrigger();
+    public abstract void SetDeadState();
 }
