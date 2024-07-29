@@ -28,7 +28,7 @@ public class CaptchaPicture : MonoBehaviour
         int rand = Random.Range(0, _cardList.Count);
         _currentCard = _cardList[rand];
 
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 16; i++)
         {
             GameObject.Find($"Card ({i})")
                 .GetComponent<Image>().sprite = _cardList[rand].sprite[i];
