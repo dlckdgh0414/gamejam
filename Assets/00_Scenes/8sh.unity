@@ -1730,7 +1730,7 @@ Transform:
   m_GameObject: {fileID: 707455823}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.7130594, y: 1.3376372, z: -9.944255}
+  m_LocalPosition: {x: 7.7130594, y: 1.3376372, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2103,7 +2103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883214047}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2925,7 +2925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255031507}
   - component: {fileID: 1255031508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3160,7 +3160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334211205}
   - component: {fileID: 1334211206}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3544,8 +3544,9 @@ GameObject:
   - component: {fileID: 1561372553}
   - component: {fileID: 1561372558}
   - component: {fileID: 1561372556}
+  - component: {fileID: 1561372559}
   - component: {fileID: 1561372552}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3737,6 +3738,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9adb449f7f8a2e245b4e342c64565ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1561372559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561372551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f5cb088eb5bac4693a8a22eb81a725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 3
+  canAttack: 0
 --- !u!1 &1561544754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,7 +3990,7 @@ Transform:
   m_GameObject: {fileID: 1571059230}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26, y: -2.98, z: 9.944255}
+  m_LocalPosition: {x: -26, y: -2.98, z: 0}
   m_LocalScale: {x: 0.85, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3996,12 +4011,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotationSpeed: 5
   _xMove: 0
   _yMove: 0
-  rotationSpeed: 5
-  waypoints:
-  - {fileID: 764406322}
-  - {fileID: 179259090}
 --- !u!114 &1571059239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4014,6 +4026,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e59a39a25adc964a8ddac7c252020d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 764406322}
+  - {fileID: 179259090}
+  EnemyCount: 0
 --- !u!1 &1639996554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,7 +4377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769612476}
   - component: {fileID: 1769612477}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4445,7 +4461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783162995}
   - component: {fileID: 1783162996}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4529,7 +4545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1859489897}
   - component: {fileID: 1859489898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
