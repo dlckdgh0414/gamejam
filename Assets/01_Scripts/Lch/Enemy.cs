@@ -9,7 +9,7 @@ public enum EnemyEnum
     faint
 }
 
-public class Enemy : EnemySetting
+public class Enemy : EnemyAgent
 {
     public StateMachine<EnemyEnum> StateMachine { get; private set; }
     protected override void Awake()
@@ -31,7 +31,6 @@ public class Enemy : EnemySetting
 
     private void Update()
     {
-        Debug.Log(StateMachine.CurrentState);
         StateMachine.CurrentState.UpdateState();
         if (Movement._xMove < 0)
         {
@@ -41,7 +40,7 @@ public class Enemy : EnemySetting
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        Debug.Log(Movement._xMove);
+        Debug.Log(StateMachine.CurrentState);
     }
     public override void AnimationEndTrigger()
     {

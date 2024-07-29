@@ -4,16 +4,18 @@ using UnityEngine;
 
 public abstract class EnemyAgent : MonoBehaviour
 {
-   public EnemyMovemt Movement { get; protected set; }
+   public EnemyMovement Movement { get; protected set; }
    public Animator Animator { get; protected set; }
 
     public bool IsDie { get; protected set; }
 
     protected virtual void Awake()
     {
-        Movement = GetComponent<EnemyMovemt>();
+        Movement = GetComponent<EnemyMovement>();
         Movement.Initialize(this);
 
         Animator = transform.Find("Visual").GetComponent<Animator>();
     }
+
+    public abstract void AnimationEndTrigger();
 }

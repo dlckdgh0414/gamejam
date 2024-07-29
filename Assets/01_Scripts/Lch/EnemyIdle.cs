@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyIdle : EnemyState<EnemyEnum>
 {
-    public EnemyIdle(EnemySetting owner, StateMachine<EnemyEnum> state, string animHashName) : base(owner, state, animHashName)
+    public EnemyIdle(EnemyAgent owner, StateMachine<EnemyEnum> state, string animHashName) : base(owner, state, animHashName)
     {
     }
 
