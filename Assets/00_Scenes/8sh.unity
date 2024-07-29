@@ -1523,6 +1523,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  GetPlayerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   waypoints:
   - {fileID: 119297889}
   - {fileID: 1909132591}
@@ -3984,6 +3987,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  GetPlayerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   waypoints:
   - {fileID: 518650554}
   - {fileID: 1057395913}
@@ -5518,6 +5524,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  GetPlayerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   waypoints:
   - {fileID: 764406322}
   - {fileID: 179259090}

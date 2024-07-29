@@ -29,8 +29,13 @@ public abstract class EnemySetting : EnemyAgent
         // 이동 방향 설정
         Vector3 moveDirection = direction.normalized;
 
+        // 2D 회전 처리 (Up 방향을 기준으로 회전)
+        float singleStep = Movement.rotationSpeed * Time.deltaTime;
+        Vector3 newDirection = Vector3.RotateTowards(transform.up, moveDirection, singleStep, 0.0f);
+        transform.up = newDirection;
+
         // 이동
-        transform.position += moveDirection *Movement.moveSpeed * Time.deltaTime;
+        transform.position += moveDirection * Movement.moveSpeed * Time.deltaTime;
 
         // 웨이포인트에 도달했는지 확인
         if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
