@@ -345,8 +345,7 @@ GameObject:
   - component: {fileID: 932380489}
   - component: {fileID: 932380492}
   - component: {fileID: 932380491}
-  - component: {fileID: 932380493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,6 +397,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e59a39a25adc964a8ddac7c252020d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnDeadEvent:
+    m_PersistentCalls:
+      m_Calls: []
   waypoints:
   - {fileID: 180767907}
   - {fileID: 1435420230}
@@ -475,18 +477,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &932380493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932380486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc99b3d9f6737f54e873bd32ecee059d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1124720865
 GameObject:
   m_ObjectHideFlags: 0

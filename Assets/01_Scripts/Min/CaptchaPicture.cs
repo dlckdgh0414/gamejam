@@ -30,7 +30,7 @@ public class CaptchaPicture : MonoBehaviour
 
         for (int i = 0; i < 16; i++)
         {
-            GameObject.Find($"Image ({i})")
+            GameObject.Find($"Card ({i})")
                 .GetComponent<Image>().sprite = _cardList[rand].sprite[i];
         }
     }
