@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "SO/FindCardSO")]
 public class FindCardSO : ScriptableObject
 {
-    public Sprite[] sprite;
+    public List<Sprite> sprite;
 
-    public int correctNumber;
+    public Sprite correctSprite;
 }
