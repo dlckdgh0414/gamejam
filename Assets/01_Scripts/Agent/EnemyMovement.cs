@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     public float _xMove;
     public float _yMove;
     protected bool _canMove = true;
+    public float rotationSpeed = 5f;
     public bool CanStateChangeble { get; protected set; } = true;
 
     public Transform[] waypoints;
@@ -33,14 +34,19 @@ public class EnemyMovement : MonoBehaviour
 
     public void EnemyMove()
     {
-        if (waypoints.Length == 0) return;
-
-        // 현재 목표 웨이포인트
         Transform targetWaypoint = waypoints[currentWaypointIndex];
-        // 목표 웨이포인트로의 방향 계산
         Vector3 direction = targetWaypoint.position - transform.position;
+
+        // 이동 방향 설정
+        Vector3 moveDirection = direction.normalized;
+
+        // 2D 회전 처리 (Up 방향을 기준으로 회전)
+        float singleStep = rotationSpeed * Time.deltaTime;
+        Vector3 newDirection = Vector3.RotateTowards(transform.up, moveDirection, singleStep, 0.0f);
+        transform.up = newDirection;
+
         // 이동
-        transform.position += direction.normalized * moveSpeed * Time.deltaTime;
+        transform.position += moveDirection * moveSpeed * Time.deltaTime;
 
         // 웨이포인트에 도달했는지 확인
         if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
@@ -48,7 +54,7 @@ public class EnemyMovement : MonoBehaviour
             currentWaypointIndex++;
             if (currentWaypointIndex >= waypoints.Length)
             {
-                currentWaypointIndex = 0; // 마지막 웨이포인트에 도달하면 처음으로 돌아가기
+                currentWaypointIndex = 0; // 처음 웨이포인트로 돌아가기
             }
         }
     }
