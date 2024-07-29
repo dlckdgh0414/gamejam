@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayerCheck : MonoBehaviour
 {
-    public Enemy _enemy;
+    public EnemySetting _enemy;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Player"))
+        {
+            _enemy.GetPlayerEvent?.Invoke();
+        }
     }
 }

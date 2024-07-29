@@ -8,7 +8,7 @@ public abstract class EnemySetting : EnemyAgent
 
     public UnityEvent OnDeadEvent;
 
-    public UnityEvent PlayEffectEvent;
+    public UnityEvent GetPlayerEvent;
 
     public Transform[] waypoints;
     private int currentWaypointIndex = 0;
