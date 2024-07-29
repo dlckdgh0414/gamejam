@@ -22,6 +22,7 @@ public class FuelHandler : MonoBehaviour
         waitForSecondsRealtime = new WaitForSecondsRealtime(decreasePerSeconds);
         fuel = maxFuel;
         StartCoroutine(DecreaseFuel(fuel));
+
     }
 
     public void ChangeFuelDecreasePerSeconds(float time)
