@@ -42,6 +42,7 @@ public class FuelHandler : MonoBehaviour
             fuel = 0;
             OnFuelChanged?.Invoke(fuel);
             active = false;
+            Time.timeScale = 0;
         }
     }
 }
