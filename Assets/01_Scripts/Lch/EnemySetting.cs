@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class EnemySetting : EnemyAgent
 {
+
+    public UnityEvent OnDeadEvent;
 
     public Transform[] waypoints;
     private int currentWaypointIndex = 0;
