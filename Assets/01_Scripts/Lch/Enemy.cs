@@ -12,6 +12,8 @@ public enum EnemyEnum
 public class Enemy : EnemyAgent
 {
     public StateMachine<EnemyEnum> StateMachine { get; private set; }
+
+    public int EnemyCount;
     protected override void Awake()
     {
         base.Awake();
