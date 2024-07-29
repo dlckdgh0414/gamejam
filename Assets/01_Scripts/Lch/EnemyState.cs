@@ -5,12 +5,12 @@ using System;
 
 public class EnemyState<T> where T : Enum
 {
-    protected EnemySetting _agent;
+    protected EnemyAgent _agent;
     protected int _animBoolHash;
     protected StateMachine<T> _stateMachine;
     protected bool _endTriggerCalled;
 
-    public EnemyState(EnemySetting owner, StateMachine<T> state, string animHashName)
+    public EnemyState(EnemyAgent owner, StateMachine<T> state, string animHashName)
     {
         _agent = owner;
         _stateMachine = state;
