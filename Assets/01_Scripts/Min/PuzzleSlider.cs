@@ -34,6 +34,17 @@ public class PuzzleSlider : MonoBehaviour
     {
         _horizontalSlider.onValueChanged.AddListener(delegate { HorizontalValueChanged(); });
         _verticalSlider.onValueChanged.AddListener(delegate { VerticalValueChanged(); });
+
+        TargetGenerate();
+    }
+
+    private void TargetGenerate()
+    {
+        float posX = Random.Range(_moveXSize, -_moveXSize);
+        float posY = Random.Range(_moveYSize, -_moveYSize);
+
+        _target.GetComponent<RectTransform>()
+            .transform.localPosition = new Vector3(posX, posY, 0);
     }
 
     public void HorizontalValueChanged()
