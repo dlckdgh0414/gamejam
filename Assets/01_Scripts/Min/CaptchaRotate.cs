@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class CaptchaRotate : MonoBehaviour
 {
-    [SerializeField] private Sprite[] _sprites; //돌릴 이미지 리스트;+
+    [SerializeField] private Sprite[] _sprites; //돌릴 이미지 리스트;
     [SerializeField] private GameObject _picture; //돌릴 이미지 오브잭트
     [SerializeField] private int _angleSize; //클릭했을때 회전각 크기
 
