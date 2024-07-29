@@ -1318,7 +1318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuelHandler: {fileID: 1561372552}
-  gage: {fileID: 1509639119}
 --- !u!1 &1514474178
 GameObject:
   m_ObjectHideFlags: 0

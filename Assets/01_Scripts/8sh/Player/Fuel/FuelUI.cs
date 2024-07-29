@@ -8,19 +8,20 @@ using DG.Tweening;
 public class FuelUI : MonoBehaviour
 {
     public FuelHandler fuelHandler;
-    public Image gage;
+    private Image gage;
 
-    private void Start()
+    private void OnEnable()
     {
-        if (fuelHandler != null)
-        {
-            fuelHandler.OnFuelChanged += UpdateFuelGage;
-        }
+        gage = GetComponent<Image>();
+        fuelHandler.OnFuelChanged += UpdateFuelGage;
     }
 
-    private void UpdateFuelGage(int currentFuel)
+
+    public void UpdateFuelGage(int fuel)
     {
-        float fillAmount = Mathf.Lerp(0, fuelHandler.maxFuel, currentFuel);
+        float fillAmount = (fuelHandler.maxFuel / fuel) / 100;
+        print(fuel);
+        print(fillAmount);
         DOTween.To(() => gage.fillAmount, x => gage.fillAmount = x, fillAmount, 0.25f);
     }
 }
