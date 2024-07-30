@@ -969,6 +969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardList: {fileID: 11400000, guid: 5e8caeb30b35dd54087fb1d06facd566, type: 2}
+  nametext: {fileID: 1009380049}
 --- !u!114 &57488753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1331,7 +1332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.17254902, g: 0.27450982, b: 0.36862746, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5799,7 +5800,7 @@ GameObject:
   - component: {fileID: 535631251}
   - component: {fileID: 535631250}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5874,8 +5875,8 @@ MonoBehaviour:
   m_fontSize: 73.7
   m_fontSizeBase: 73.7
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 30
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
@@ -6317,7 +6318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.17254902, g: 0.27450982, b: 0.36862746, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7742,7 +7743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
+  m_Color: {r: 0.17254902, g: 0.27450982, b: 0.36862746, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9773,8 +9774,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprites:
   - {fileID: 21300000, guid: 91da85a25a9ef5146ab71b9c482f94ea, type: 3}
-  - {fileID: 21300000, guid: 91da85a25a9ef5146ab71b9c482f94ea, type: 3}
-  - {fileID: 21300000, guid: 91da85a25a9ef5146ab71b9c482f94ea, type: 3}
+  - {fileID: 21300000, guid: e72f45dec8ef0e049999b2e57b7c2aba, type: 3}
+  - {fileID: 21300000, guid: 68af6e174da55304fa129a2f1257654e, type: 3}
+  - {fileID: 21300000, guid: e94808903c6055a449f78cd11c1ec5ec, type: 3}
+  - {fileID: 21300000, guid: a07f3c3e6db4c9b43bc3a3206ebef6b9, type: 3}
   _picture: {fileID: 1201423349}
   _angleSize: 30
 --- !u!114 &905383867
@@ -11178,8 +11181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardList: {fileID: 11400000, guid: 9d392b62b5af18b4fb3d70680f0557b8, type: 2}
-  good: {fileID: 0}
-  bad: {fileID: 0}
+  nametext: {fileID: 535631250}
 --- !u!114 &1042717485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14316,9 +14318,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372570603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0, z: 0.89393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0002746582}
+  m_LocalScale: {x: 1, y: 0, z: 0.8939299}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1563742430}
@@ -14332,7 +14334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.999, y: -96.867}
+  m_AnchoredPosition: {x: 32.99904, y: -101}
   m_SizeDelta: {x: 619.24097, y: 172.69379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372570605
@@ -14359,6 +14361,7 @@ MonoBehaviour:
   father: {fileID: 1993506587}
   good: {fileID: 951526710}
   bad: {fileID: 1274256410}
+  stage: 0
 --- !u!1 &1376988831
 GameObject:
   m_ObjectHideFlags: 0
@@ -14684,7 +14687,7 @@ GameObject:
   - component: {fileID: 1388189478}
   - component: {fileID: 1388189477}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15595,7 +15598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.17254902, g: 0.27450982, b: 0.36862746, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15797,7 +15800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.17254902, g: 0.27450982, b: 0.36862746, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18493,7 +18496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.17254902, g: 0.27450982, b: 0.36862746, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19703,11 +19706,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1372570605}
         m_TargetAssemblyTypeName: CheckButton, Assembly-CSharp
         m_MethodName: PressEmpty
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20246,7 +20249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.17254902, g: 0.27450982, b: 0.36862746, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
