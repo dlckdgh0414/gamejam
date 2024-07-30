@@ -18,6 +18,7 @@ public class Check : MonoBehaviour
     void Start()
     {
         light2D = GetComponent<Light2D>();
+        player = GameObject.FindWithTag("Player").transform;
     }
 
     void Update()
