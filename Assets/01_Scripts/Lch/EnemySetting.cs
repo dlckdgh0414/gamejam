@@ -13,6 +13,8 @@ public abstract class EnemySetting : EnemyAgent
     public Transform[] waypoints;
     private int currentWaypointIndex = 0;
 
+    public Vector3 moveDirection;
+
     public abstract void AnimationEndTrigger();
 
     public void SetDead(bool value)
@@ -27,7 +29,7 @@ public abstract class EnemySetting : EnemyAgent
         Vector3 direction = targetWaypoint.position - transform.position;
 
         // 이동 방향 설정
-        Vector3 moveDirection = direction.normalized;
+        moveDirection = direction.normalized;
 
         // 2D 회전 처리 (Up 방향을 기준으로 회전)
         float singleStep = Movement.rotationSpeed * Time.deltaTime;
