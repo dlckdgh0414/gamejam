@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,13 @@ public class PlayerCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            _enemy.GetPlayerEvent?.Invoke();
+            StartCoroutine(DelayTime());
         }
+    }
+
+    private IEnumerator DelayTime()
+    {
+        yield return new WaitForSeconds(1f);
+        _enemy.GetPlayerEvent?.Invoke();
     }
 }
