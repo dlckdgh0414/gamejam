@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<PlayerInput>().OnPressAttack += Attack;
+        GetComponent<PlayerInput>().OnAttackInput += Attack;
     }
 
     private void Update()
