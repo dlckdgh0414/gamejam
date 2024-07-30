@@ -5,9 +5,9 @@ using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
 
-public class Test : MonoBehaviour
+public class TestVerify : MonoBehaviour
 {
-    public static Test instance;
+    public static TestVerify instance;
 
     [SerializeField] RectTransform question;
     [SerializeField] Image check;
@@ -45,8 +45,6 @@ public class Test : MonoBehaviour
 
     public void PressEmpty() // 버튼 클릭
     {
-        Debug.Log("is?");
-        print("isitworks?");    
         if (!_already) // 이미 클릭되었는지 확인
         {
             check.DOFade(1, 1f);
