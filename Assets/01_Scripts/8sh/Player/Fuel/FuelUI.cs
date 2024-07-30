@@ -7,20 +7,31 @@ using TMPro;
 
 public class FuelUI : MonoBehaviour
 {
-    public FuelHandler fuelHandler;
+    private FuelHandler fuelHandler;
     private TextMeshProUGUI fuelText;
-    private Image gage;
+    private Image battery;
+    private int splitedFuel = 100;
+    [SerializeField] private Sprite[] sprites = new Sprite[5];
 
-    private void OnEnable()
+    private void Start()
     {
-        fuelText = GetComponent<TextMeshProUGUI>();
-        gage = GetComponent<Image>();
+        fuelHandler = GameObject.FindWithTag("Player").GetComponent<FuelHandler>();
+        fuelText = GetComponentInChildren<TextMeshProUGUI>();
+        battery = GetComponentInChildren<Image>();
+        battery.sprite = sprites[3];
+        splitedFuel = fuelHandler.maxFuel / 4;
         fuelHandler.OnFuelChanged += UpdateFuelGage;
+        battery.sprite = sprites[4];
     }
-
     public void UpdateFuelGage(int fuel)
     {
         fuelText.text = $"{fuelHandler.fuel}%";
-        //여따가 게이지 UI에 현재 엔진만큼 게이지 깎아 드세용 ^^
+        switch (fuel)
+        {
+            case 5: battery.sprite = sprites[0]; break;
+            case 25: battery.sprite = sprites[1]; break;
+            case 50: battery.sprite = sprites[2]; break;
+            case 75: battery.sprite = sprites[3]; break;
+        }
     }
 }

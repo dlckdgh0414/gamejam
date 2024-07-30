@@ -16,10 +16,10 @@ public class KillUI : MonoBehaviour
 
     public void Effect()
     {
-        Color c = Color.black;
+        Color c = Color.red;
         c.a = 0;
-        image.color = Color.black;
-        image.DOColor(c, 1f);
+        image.color = Color.red;
+        image.DOColor(c, 0.3f);
         //GameObject.Find("")GetComponent<ParticleSystem>().Play();
     }
 }

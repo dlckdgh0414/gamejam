@@ -9,11 +9,14 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private LayerMask targetLayer;
     public bool canAttack = false;
 
+    private PlayerMovement playerMovement;
+
     private Collider2D target { get; set; } = null;
 
     private void Start()
     {
-        GetComponent<PlayerInput>().OnPressAttack += Attack;
+        GetComponent<PlayerInput>().OnAttackInput += Attack;
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -30,6 +33,7 @@ public class PlayerAttack : MonoBehaviour
             print("°¨Áö");
             canAttack = true;
             target = collider;
+            print(target);
         }
     }
 

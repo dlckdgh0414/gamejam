@@ -5,17 +5,14 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public event Action OnPressAttack;
+    public event Action OnAttackInput;
+    public event Action OnDashInput;
     public Vector2 moveDir { get; set; }
 
     private void Update()
     {
         GetMoveInput();
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            OnPressAttack?.Invoke();
-        }
+        GetInputs();
     }
 
     public void GetMoveInput()
@@ -24,5 +21,17 @@ public class PlayerInput : MonoBehaviour
         float y = Input.GetAxisRaw("Vertical");
         moveDir = new Vector2(x, y);
         moveDir.Normalize();
+    }
+
+    private void GetInputs()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnAttackInput?.Invoke();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            OnDashInput?.Invoke();
+        }
     }
 }
