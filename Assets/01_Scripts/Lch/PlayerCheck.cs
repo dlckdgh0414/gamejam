@@ -2,10 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerCheck : MonoBehaviour
 {
     public EnemySetting _enemy;
+
+    public UnityEvent PlayerDaedEvent;
 
     private float _dlay;
 
