@@ -7,17 +7,20 @@ public class PlayerCheck : MonoBehaviour
 {
     public EnemySetting _enemy;
 
+    private float _dlay;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player")&& !_enemy.IsDie)
         {
-            StartCoroutine(DelayTime());
+            _dlay = 1;
+            StartCoroutine(DelayTime(_dlay));
         }
     }
 
-    private IEnumerator DelayTime()
+    private IEnumerator DelayTime(float delayTime)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(delayTime);
         _enemy.GetPlayerEvent?.Invoke();
     }
 }
