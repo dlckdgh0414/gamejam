@@ -6,6 +6,7 @@ public enum EnemyEnum
 {
     Idle,
     Walk,
+    Attack,
     Dead
 }
 
@@ -18,6 +19,11 @@ public class Enemy : EnemySetting
         StateMachine.ChangeState(EnemyEnum.Dead);
     }
 
+    public void GetPlayer()
+    {
+        StateMachine.ChangeState(EnemyEnum.Attack);
+    }
+
     public int EnemyCount;
     protected override void Awake()
     {
@@ -27,6 +33,7 @@ public class Enemy : EnemySetting
 
         StateMachine.AddState(EnemyEnum.Idle, new EnemyIdle(this, StateMachine, "Idle"));
         StateMachine.AddState(EnemyEnum.Walk, new EnemyWalk(this, StateMachine, "Walk"));
+        StateMachine.AddState(EnemyEnum.Attack, new EnemyAttack(this, StateMachine, "Attack"));
         StateMachine.AddState(EnemyEnum.Dead, new EnemyDead(this, StateMachine, "Dead"));
 
     }

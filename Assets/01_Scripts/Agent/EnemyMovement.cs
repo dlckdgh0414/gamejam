@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [Header("Settings")]
     public float moveSpeed = 5f;
-    public float rotationSpeed = 5f;
+    public float scaleChangeSpeed = 5f;
 
     private EnemyAgent _owner;
     public Rigidbody2D rbcompo { get; private set; }

@@ -30,12 +30,6 @@ public class EnemyDead : EnemyState<EnemyEnum>
         if (_endTriggerCalled && !_onExplosion)
         {
             _onExplosion = true;
-            PlayExplosion();
         }
-    }
-    private void PlayExplosion()
-    {
-        _agent.PlayEffectEvent?.Invoke();
-        EffectPlay.Intacne.ParticlePool.Push(EffectPlay.Intacne.ParticlePrfab);
     }
 }

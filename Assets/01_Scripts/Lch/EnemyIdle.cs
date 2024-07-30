@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,13 @@ public class EnemyIdle : EnemyState<EnemyEnum>
     {
         base.Enter();
         _agent.Movement.StopMove(true);
+        _agent.StartCoroutine(MoveDelay());
+    }
+
+    private IEnumerator MoveDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        _stateMachine.ChangeState(EnemyEnum.Walk);
     }
 
     public override void Exit()
@@ -22,7 +30,5 @@ public class EnemyIdle : EnemyState<EnemyEnum>
     public override void UpdateState()
     {
         base.UpdateState();
-        new WaitForSeconds(2f);
-        _stateMachine.ChangeState(EnemyEnum.Walk);
     }
 }
