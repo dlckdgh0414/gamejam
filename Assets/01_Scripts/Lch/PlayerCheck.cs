@@ -13,7 +13,7 @@ public class PlayerCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player")&& !_enemy.IsDie)
         {
-            _dlay = 1;
+            _dlay = 0.5f;
             StartCoroutine(DelayTime(_dlay));
         }
     }
