@@ -11,6 +11,10 @@ public class EnemyAttack : EnemyState<EnemyEnum>
     public override void Enter()
     {
         base.Enter();
+        if (_agent.IsDie)
+        {
+            _stateMachine.ChangeState(EnemyEnum.Dead);
+        }
     }
 
     public override void Exit()
@@ -21,5 +25,9 @@ public class EnemyAttack : EnemyState<EnemyEnum>
     public override void UpdateState()
     {
         base.UpdateState();
+        if (_endTriggerCalled)
+        {
+            _stateMachine.ChangeState(EnemyEnum.Walk);
+        }
     }
 }
