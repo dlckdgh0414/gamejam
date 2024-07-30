@@ -92,11 +92,14 @@ public class CardFind : MonoBehaviour
 
     private void OnSucess()
     {
-        Debug.Log("성공");
+        CheckButton.instance.Good();
+
+
     }
 
     private void OnFail()
     {
-        Debug.Log("실패");
+        CheckButton.instance.Bad();
+
     }
 }

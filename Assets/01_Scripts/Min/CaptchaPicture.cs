@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Text.RegularExpressions;
 using System.Linq;
+using TMPro;
+using DG.Tweening;
 
 public class CaptchaPicture : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class CaptchaPicture : MonoBehaviour
     private CardSO _currentCard;
     private List<CardSO> _cardList = new List<CardSO>();
     private List<int> _selectedCard = new List<int>();
+    [SerializeField] TextMeshProUGUI good;
+    [SerializeField] TextMeshProUGUI bad;
+
 
     private void Awake()
     {
@@ -69,11 +74,14 @@ public class CaptchaPicture : MonoBehaviour
 
     private void OnSucess()
     {
-        Debug.Log("성공");
+        CheckButton.instance.Good();
+
+        
     }
 
     private void OnFail()
     {
-        Debug.Log("실패");
+        CheckButton.instance.Bad();
+       
     }
 }
