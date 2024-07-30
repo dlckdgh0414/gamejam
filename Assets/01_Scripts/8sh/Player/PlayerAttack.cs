@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
-        GameObject.FindWithTag("Player").GetComponent<PlayerInput>().OnPressAttack += Attack;
+        GetComponent<PlayerInput>().OnPressAttack += Attack;
     }
 
     private void Update()
@@ -37,6 +37,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (canAttack && target)
         {
+            print("АэАн!");
             canAttack = false;
             transform.position = target.transform.position;
             target.transform.GetComponent<EnemySetting>().OnDeadEvent?.Invoke();
