@@ -38,6 +38,10 @@ public class FuelHandler : MonoBehaviour
         {
             fuel -= decreaseAmount;
             OnFuelChanged?.Invoke(fuel);
+            if (fuel <= 5)
+            {
+                waitForSecondsRealtime.waitTime *= 1.5f;
+            }
             yield return waitForSecondsRealtime;
             StartCoroutine(DecreaseFuel(fuel));
         }else
