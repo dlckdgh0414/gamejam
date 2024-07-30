@@ -30,6 +30,7 @@ public class EnemyWalk : EnemyState<EnemyEnum>
 
     private void EnemyMove()
     {
+
             Transform targetWaypoint =_agent.waypoints[_agent.currentWaypointIndex];
             Vector3 direction = targetWaypoint.position - _agent.transform.position;
 

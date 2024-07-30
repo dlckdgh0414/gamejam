@@ -5,9 +5,9 @@ using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
 
-public class Test : MonoBehaviour
+public class test : MonoBehaviour
 {
-    public static Test instance;
+    public static test instance;
 
     [SerializeField] RectTransform question;
     [SerializeField] Image check;
