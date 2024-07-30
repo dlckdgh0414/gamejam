@@ -17,6 +17,8 @@ public class EnemyDead : EnemyState<EnemyEnum>
         _agent.Movement.StopMove();
         _agent.SetDead(true);
         _onExplosion = false;
+        _agent._Light.SetActive(false);
+        _agent._Sfx.Stop();
     }
 
     public override void Exit()
