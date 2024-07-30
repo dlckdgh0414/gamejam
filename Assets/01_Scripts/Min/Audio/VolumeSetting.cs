@@ -10,9 +10,11 @@ public class VolumeSetting : MonoBehaviour
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
 
+    public static VolumeSetting Inatnce;
+
     private void Start()
     {
-        if (PlayerPrefs.HasKey("musicVolume"))
+        if (PlayerPrefs.HasKey("BGM"))
         {
             LoadVolume();
         }
@@ -21,18 +23,27 @@ public class VolumeSetting : MonoBehaviour
             SetMusicVolume();
             SetSFXVolume();
         }
+        if (Inatnce == null)
+            Inatnce = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public void SetMusicVolume()
     {
         float volume = musicSlider.value;
         myMixer.SetFloat("BGM", Mathf.Log10(volume) * 20);
-        PlayerPrefs.SetFloat("musicVolume", volume);
+        PlayerPrefs.SetFloat("BGM", volume);
     }
     public void SetSFXVolume()
     {
         float volume = sfxSlider.value;
         myMixer.SetFloat("SFX", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("SFXVolume", volume);
+    }
+    public void SetMasterVolume()
+    {
+        float volume = sfxSlider.value;
+        myMixer.SetFloat("Master", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat("SFXVolume", volume);
     }
 
