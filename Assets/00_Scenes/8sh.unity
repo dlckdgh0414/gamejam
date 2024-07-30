@@ -4679,7 +4679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0.084, y: -0.767, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: -600}
+  m_AnchoredPosition: {x: 16, y: -255}
   m_SizeDelta: {x: 3897.44, y: 825.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345284516
@@ -4734,7 +4734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC801\uC774 10\uBA85 \uB0A8\uC558\uC2B5\uB2C8\uB2E4."
+  m_text: "10\uBA85 \uB0A8\uC558\uC2B5\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bf3f5f46be38a14ab1ef47130a6838f, type: 2}
   m_sharedMaterial: {fileID: -7063361175013439021, guid: 2bf3f5f46be38a14ab1ef47130a6838f, type: 2}
@@ -4743,8 +4743,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280624637
-  m_fontColor: {r: 0.990566, g: 0.1448469, b: 0.1448469, a: 1}
+    rgba: 2434557
+  m_fontColor: {r: 0.990566, g: 0.1448469, b: 0.1448469, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
