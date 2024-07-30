@@ -27,7 +27,7 @@ public class EnemyAttack : EnemyState<EnemyEnum>
         base.UpdateState();
         if (_endTriggerCalled)
         {
-            _stateMachine.ChangeState(EnemyEnum.Walk);
+            _agent.GetAttackEvenet?.Invoke();
         }
     }
 }

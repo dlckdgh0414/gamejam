@@ -10,6 +10,8 @@ public abstract class EnemySetting : EnemyAgent
 
     public UnityEvent GetPlayerEvent;
 
+    public UnityEvent GetAttackEvenet;
+
     public Transform[] waypoints;
     public int currentWaypointIndex = 0;
 
