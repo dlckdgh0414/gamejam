@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class CardFind : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class CardFind : MonoBehaviour
 
     private Image _selectedCard;
     private Image _prevCard;
+
+    private string _name;
+    [SerializeField] TextMeshProUGUI nametext;
+
 
     private void Awake()
     {
@@ -28,6 +33,9 @@ public class CardFind : MonoBehaviour
     {
         int rand = Random.Range(0, _cardList.Count);
         _currentCard = _cardList[rand];
+
+        _name = _currentCard.cardName;
+        nametext.text =  $"<size=200%>{_name}<size=100%>를 선택하세요 ";
 
         _currentCard.sprite.Add(_currentCard.correctSprite);
 
@@ -92,11 +100,14 @@ public class CardFind : MonoBehaviour
 
     private void OnSucess()
     {
-        Debug.Log("성공");
+        CheckButton.instance.Good();
+
+
     }
 
     private void OnFail()
     {
-        Debug.Log("실패");
+        CheckButton.instance.Bad();
+
     }
 }

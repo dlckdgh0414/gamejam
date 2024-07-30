@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2bfd1d431ff3144abebeb128b20c485, type: 3}
+  m_Name: Sakura
+  m_EditorClassIdentifier: 
+  sprite:
+  - {fileID: 347183224, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: -499567849, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 7978429, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 850618026, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: -849996625, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 695560637, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 784404583, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 1640632960, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 1792128746, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 1181530651, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: -1492174894, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 2108246545, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 518819043, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: -1640278187, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 1141603672, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  - {fileID: 895954731, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
+  correctCard: 0600000007000000090000000a0000000b0000000e0000000f000000
+  cardName: "\uBC9B\uAF43\uB098\uBB34"
