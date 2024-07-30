@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2bfd1d431ff3144abebeb128b20c485, type: 3}
+  m_Name: Bird
+  m_EditorClassIdentifier: 
+  cardName: "\uC0C8 \uB5BC"
+  sprite:
+  - {fileID: 2061200833, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -1474899002, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -1181821256, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: 570288840, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -1652489635, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -648361896, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -1984954804, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: 1015255821, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: 1769327711, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: 328098707, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: 1664753964, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -1743747112, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -2077095360, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: -856184506, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: 257021505, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  - {fileID: 1781660838, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
+  correctCard: 0000000001000000020000000400000005000000

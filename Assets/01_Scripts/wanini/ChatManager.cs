@@ -10,6 +10,7 @@ public class ChatManager : MonoBehaviour
     [SerializeField] TMP_Text txtObj;
     [SerializeField] RectTransform chatwindow;
     [SerializeField] AudioSource asudio;
+    [SerializeField] TMP_Text _name;
     public bool isended;
     public bool isclosed;
 
@@ -25,21 +26,22 @@ public class ChatManager : MonoBehaviour
 
     public IEnumerator Test()
     {
-        OpenChat();
+        OpenChat("");
 
         yield return new WaitUntil(() => isclosed); isclosed = false;
         yield return new WaitForSeconds(0.5f);
-        StartCoroutine(Typing("세현이네 똘똘이 포켓몬들 5총사 흥해라 ", 0.1f));
+        StartCoroutine(Typing("여기서 나가겠어.", 0.1f));
         yield return new WaitUntil(() => isended); isended = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         CloseChat();
 
     }
 
-    public void OpenChat()
+    public void OpenChat(string name)
     {
-        chatwindow.DOAnchorPos(new Vector2(0, -160), 1).SetEase(Ease.Flash);
+        chatwindow.DOAnchorPos(new Vector2(0,   -135), 1).SetEase(Ease.InSine);
         isclosed = true;
+        _name.text = name;
     }
 
     public IEnumerator Typing( string text, float rate)
@@ -55,7 +57,7 @@ public class ChatManager : MonoBehaviour
 
     public void CloseChat()
     {
-        chatwindow.DOAnchorPos(new Vector2(0, -450), 0.5f).SetEase(Ease.Flash);
+        chatwindow.DOAnchorPos(new Vector2(0, -450), 1f).SetEase(Ease.OutSine);
     }
 
 

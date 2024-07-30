@@ -67,7 +67,7 @@ public class CheckButton : MonoBehaviour
         canvasGroup.DOFade(1, 0.1f);
         yield return new WaitForSeconds(0.3f);
 
-        card[Random.Range(0, card.Count)].SetActive(true); 
+        card[Random.Range(0, card.Count )].SetActive(true); 
 
         
 
