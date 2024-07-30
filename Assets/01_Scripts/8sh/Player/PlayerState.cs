@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlayerState : MonoBehaviour
 {
-    private GameObject gameOverUI;
+    [SerializeField] private GameObject gameOverUI;
 
     private void Awake()
     {
-        gameOverUI = GameObject.Find("Canvas/GameOver");
+        //gameOverUI = GameObject.Find("Canvas/GameOver");
     }
 
     public void Death()
     {
+        StartCoroutine(ShowUI());
+    }
 
+    private IEnumerator ShowUI()
+    {
+        yield return new WaitForSecondsRealtime(0.15f);
+        gameOverUI.SetActive(true);
     }
 }

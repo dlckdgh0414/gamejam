@@ -1395,6 +1395,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1377653912}
+  - {fileID: 1613731243}
   m_Father: {fileID: 1477770009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &391527392
@@ -1480,7 +1481,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 000000006d676290f9c7b94bd50a1b6d55e614e4
@@ -1526,6 +1527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 1477770010}
+  fire: {fileID: 1377653911}
   _dlay: 0.5
   lightSource: {fileID: 391527394}
   player: {fileID: 1291320430}
@@ -5646,6 +5648,7 @@ GameObject:
   - component: {fileID: 1291320424}
   - component: {fileID: 1291320423}
   - component: {fileID: 1291320422}
+  - component: {fileID: 1291320432}
   - component: {fileID: 1291320421}
   - component: {fileID: 1291320431}
   m_Layer: 8
@@ -6080,6 +6083,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1291320432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291320420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b22161a57fb8cb4ca00e6ca9d96966c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 798285301}
 --- !u!1 &1310305166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6788,6 +6804,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1291320432}
+        m_TargetAssemblyTypeName: PlayerState, Assembly-CSharp
+        m_MethodName: Death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   GetAttackEvenet:
     m_PersistentCalls:
       m_Calls: []
@@ -6910,8 +6938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebd5e38f083308545994c7c1a50e3a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  scaleChangeSpeed: 5
+  moveSpeed: 3
+  scaleChangeSpeed: 3
   _xMove: 0
   _yMove: 0
 --- !u!43 &1480476510
@@ -7433,6 +7461,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4082284140382407132, guid: 1bde458366a761d4ba8b2161030de697, type: 3}
   m_PrefabInstance: {fileID: 1576205121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1613731242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613731243}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1613731243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613731242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: 3.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 391527391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623466394
 GameObject:
   m_ObjectHideFlags: 0
@@ -13619,7 +13678,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
