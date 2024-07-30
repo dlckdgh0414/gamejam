@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/01_Scripts/Min/Audio.meta
+guid: 73a87ffb8c3d9304381933d8457c3113
+========
 guid: b6a904f376b824746bd3f032735c3423
+>>>>>>>> Base:Assets/05_Animation/Lch.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
