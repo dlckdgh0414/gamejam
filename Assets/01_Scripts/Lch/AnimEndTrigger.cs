@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimEndTrigger : MonoBehaviour
 {
-    [SerializeField] private Enemy _enemy;
+    [SerializeField] private EnemyStateAdd _enemy;
 
     public void AnimationEnd()
     {

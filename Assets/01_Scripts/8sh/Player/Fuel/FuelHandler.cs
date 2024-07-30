@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FuelHandler : MonoBehaviour
 {
     public event Action<int> OnFuelChanged;
+    public UnityEvent OnDead;
 
     [Header("Values")]
     public bool active = true;
@@ -36,6 +38,10 @@ public class FuelHandler : MonoBehaviour
         {
             fuel -= decreaseAmount;
             OnFuelChanged?.Invoke(fuel);
+            if (fuel <= 5)
+            {
+                waitForSecondsRealtime.waitTime *= 1.5f;
+            }
             yield return waitForSecondsRealtime;
             StartCoroutine(DecreaseFuel(fuel));
         }else
@@ -43,7 +49,7 @@ public class FuelHandler : MonoBehaviour
             fuel = 0;
             OnFuelChanged?.Invoke(fuel);
             active = false;
-            Time.timeScale = 0;
+            OnDead?.Invoke();
         }
     }
 }
