@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bfd1d431ff3144abebeb128b20c485, type: 3}
   m_Name: ape
   m_EditorClassIdentifier: 
+  cardName: "\uC6D0\uC22D\uC774"
   sprite:
   - {fileID: -431889867, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
   - {fileID: -1319750079, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
@@ -29,5 +30,5 @@ MonoBehaviour:
   - {fileID: 1999227363, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
   - {fileID: 195937884, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
   - {fileID: -1928962108, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
-  correctCard: 0a0000000e0000000f000000
-  cardName: "\uC6D0\uC22D\uC774"
+  correctCard: 0a0000000e000000
+  probability: 5

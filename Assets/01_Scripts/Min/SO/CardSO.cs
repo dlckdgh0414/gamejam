@@ -5,10 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="SO/Card")]
 public class CardSO : ScriptableObject
 {
-    public Sprite[] sprite;
-
-    public List<int> correctCard;
-
+  
     public string cardName;
-
+    public Sprite[] sprite;
+    public List<int> correctCard;
+    [Range(0, 100)]
+   
+            
 }
