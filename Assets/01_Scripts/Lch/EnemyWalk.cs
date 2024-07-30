@@ -24,5 +24,7 @@ public class EnemyWalk : EnemyState<EnemyEnum>
     {
         base.UpdateState();
         _agent.EnemyMove();
+        _agent.AnimatorCopo.SetFloat("moveX",_agent.moveDirection.x);
+        _agent.AnimatorCopo.SetFloat("moveY",_agent.moveDirection.y);
     }
 }
