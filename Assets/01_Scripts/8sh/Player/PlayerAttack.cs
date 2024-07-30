@@ -30,6 +30,7 @@ public class PlayerAttack : MonoBehaviour
             print("°¨Áö");
             canAttack = true;
             target = collider;
+            print(target);
         }
     }
 
