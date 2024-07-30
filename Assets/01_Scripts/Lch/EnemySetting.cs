@@ -11,7 +11,7 @@ public abstract class EnemySetting : EnemyAgent
     public UnityEvent GetPlayerEvent;
 
     public Transform[] waypoints;
-    private int currentWaypointIndex = 0;
+    public int currentWaypointIndex = 0;
 
     public Vector3 moveDirection;
 
@@ -30,12 +30,6 @@ public abstract class EnemySetting : EnemyAgent
 
         // 이동 방향 설정
         moveDirection = direction.normalized;
-
-        // 2D 회전 처리 (Up 방향을 기준으로 회전)
-        float singleStep = Movement.rotationSpeed * Time.deltaTime;
-        Vector3 newDirection = Vector3.RotateTowards(transform.up, moveDirection, singleStep, 0.0f);
-        transform.up = newDirection;
-
         // 이동
         transform.position += moveDirection * Movement.moveSpeed * Time.deltaTime;
 
