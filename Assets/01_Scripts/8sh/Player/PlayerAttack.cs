@@ -41,6 +41,7 @@ public class PlayerAttack : MonoBehaviour
             transform.position = target.transform.position;
             target.transform.GetComponent<EnemySetting>().OnDeadEvent?.Invoke();
             Destroy(target.transform.Find("Head").gameObject);
+            target.transform.GetComponentInChildren<ParticleSystem>().Play();
             GetComponent<AudioSource>().Play();
         }
     }
