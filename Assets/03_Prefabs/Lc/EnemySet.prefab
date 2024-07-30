@@ -750,8 +750,8 @@ MonoBehaviour:
   GetAttackEvenet:
     m_PersistentCalls:
       m_Calls: []
-  _light2D: {fileID: 8052953236695986709}
-  _SFX: {fileID: 0}
+  _Light: {fileID: 8052953236695986709}
+  _Sfx: {fileID: 5758149295061482494}
   waypoints:
   - {fileID: 5599469694702228358}
   - {fileID: 2706807714099622609}
@@ -871,7 +871,7 @@ MonoBehaviour:
   - {x: 0.20902419, y: -0.25294495, z: 0}
   m_ShapePathHash: 0
   m_Mesh: {fileID: 0}
-  m_InstanceId: 298170
+  m_InstanceId: 301006
   m_LocalBounds:
     m_Center: {x: 0.043920755, y: 0.0027451515, z: 0}
     m_Extent: {x: 0.16510344, y: 0.2556901, z: 0}
