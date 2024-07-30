@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2bfd1d431ff3144abebeb128b20c485, type: 3}
+  m_Name: Glass
+  m_EditorClassIdentifier: 
+  cardName: "\uC794\uB514"
+  sprite:
+  - {fileID: 245312864, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: 522563056, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: 614016286, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: 804060469, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: 222562198, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -1920661163, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -2033298833, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: 1849052170, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: 1289873517, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -1484900151, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -556043350, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -1548602114, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -1222894683, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -1041424022, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: -719434099, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  - {fileID: 1035996158, guid: e37bdc6f4903c894694ab84fe9803b30, type: 3}
+  correctCard: 080000000c0000000d0000000e0000000f000000
