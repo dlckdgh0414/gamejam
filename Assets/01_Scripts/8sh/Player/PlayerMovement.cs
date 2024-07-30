@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashCooldown = 2;
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float dashPower = 10;
+    [SerializeField] private AudioSource dashAudio;
 
     [Header("State")]
     public bool active = true;
@@ -89,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 dashDirection = playerInput.moveDir;
         rigidbody2d.velocity = dashDirection * dashPower;
+        dashAudio.Play();
 
         yield return dashDurationWFSR;
 
