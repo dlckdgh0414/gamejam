@@ -27,9 +27,5 @@ public class EnemyDead : EnemyState<EnemyEnum>
     public override void UpdateState()
     {
         base.UpdateState();
-        if (_endTriggerCalled && !_onExplosion)
-        {
-            _onExplosion = true;
-        }
     }
 }

@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Enemy
   - DeadEnemy
-  - 
+  - Player
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Forground
     uniqueID: 1146901793
+    locked: 0
+  - name: UI
+    uniqueID: 3826574933
     locked: 0
