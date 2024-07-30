@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  rotationSpeed: 5
+  scaleChangeSpeed: 5
   _xMove: 0
   _yMove: 0
 --- !u!114 &932380490
@@ -446,6 +446,7 @@ MonoBehaviour:
   - {fileID: 2136912826}
   - {fileID: 1386620130}
   - {fileID: 180767907}
+  currentWaypointIndex: 0
   EnemyCount: 0
 --- !u!61 &932380491
 BoxCollider2D:
@@ -700,7 +701,7 @@ Animator:
   m_GameObject: {fileID: 1346573061}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a7eaef2e9e99c2a43a1458cb0bf45623, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4de4b08583d2f764787f0cd3b9fadf8b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
