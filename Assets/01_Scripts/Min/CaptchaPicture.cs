@@ -8,7 +8,6 @@ using System.Linq;
 using TMPro;
 using DG.Tweening;
 
-
 public class CaptchaPicture : MonoBehaviour
 {
     public CardSOList cardList;
@@ -31,13 +30,11 @@ public class CaptchaPicture : MonoBehaviour
 
     private void Initialize()
     {
-
+        
 
         int rand = Random.Range(0, _cardList.Count);
         _currentCard = _cardList[rand];
 
-        Debug.Log(rand);
-        
         _name = _currentCard.cardName;
         nametext.text = _name;
 
@@ -88,6 +85,6 @@ public class CaptchaPicture : MonoBehaviour
 
     private void OnFail()
     {
-        CheckButton.instance.Bad();
+        CheckButton.instance.Bad();    
     }
 }
