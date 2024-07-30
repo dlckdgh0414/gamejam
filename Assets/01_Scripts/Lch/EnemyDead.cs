@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class EnemyDead : EnemyState<EnemyEnum>
 {
@@ -17,6 +18,8 @@ public class EnemyDead : EnemyState<EnemyEnum>
         _agent.Movement.StopMove();
         _agent.SetDead(true);
         _onExplosion = false;
+        _agent._light2D.SetActive(false);
+        _agent._SFX.Stop();
     }
 
     public override void Exit()
