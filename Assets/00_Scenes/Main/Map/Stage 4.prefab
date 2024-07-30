@@ -30282,7 +30282,7 @@ GameObject:
   - component: {fileID: 6819875379207424824}
   - component: {fileID: 4330925053658931018}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Stage 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
