@@ -8,4 +8,7 @@ public class CardSO : ScriptableObject
     public Sprite[] sprite;
 
     public List<int> correctCard;
+
+    public string cardName;
+
 }

@@ -8,4 +8,6 @@ public class FindCardSO : ScriptableObject
     public List<Sprite> sprite;
 
     public Sprite correctSprite;
+
+    public string cardName;
 }
