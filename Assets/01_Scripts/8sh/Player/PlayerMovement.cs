@@ -50,15 +50,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (fuelHandler.fuel < 10)
         {
-            speed = maxSpeed - (maxSpeed / 3);
+            speed = maxSpeed / 2;
         }
         else if (fuelHandler.fuel < 30)
         {
-            speed = maxSpeed - (maxSpeed / 4);
+            speed = maxSpeed - (maxSpeed / 3);
         }
         else if (fuelHandler.fuel < 50)
         {
-            speed = maxSpeed - (maxSpeed / 5);
+            speed = maxSpeed - (maxSpeed / 4);
         }
     }
 
