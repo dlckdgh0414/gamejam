@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: 3c3026b767c8eba409d3677b935bf6a7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 367.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721c11640fc8ed64884f9c983ae1bb9a
+      internalID: 347183224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 367.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe8a6a82298c234d98f0260302a43fc
+      internalID: -499567849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 367.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3432f7f4d86394e8dfba63e7cd8a6c
+      internalID: 7978429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 367.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27315273fabe83847a1861c64e8cb325
+      internalID: 850618026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363a48c41504e4e47bb231a1a767e3a8
+      internalID: -849996625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 245.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b16263d20df914439f33fa29899e5d0
+      internalID: 695560637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_6
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 245.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e8dcfd0bd779741afadc2e5ce4a58a
+      internalID: 784404583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 245.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fce92d77f08dd14eb2b37314867eb5f
+      internalID: 1640632960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 123.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d439a41e4268a4d866220790dc8e68
+      internalID: 1792128746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_9
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 124
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3752c8b55ca09d409fbcc1c11abbee6
+      internalID: 1181530651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 123.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6f893041726e543bfbceafb808e176
+      internalID: -1492174894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 123.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32ae11f6c38a334b95f994493bdb632
+      internalID: 2108246545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f5e94918e20244e86f0d176d5a62a6
+      internalID: 518819043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed5ee7457d2c594eb95c6b62e1b8095
+      internalID: -1640278187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_14
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebd08f5619dbdd47bb6f05179775fa1
+      internalID: 1141603672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandicam_2024-07-30_19-10-09-150_15
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1.5
+        width: 122.5
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48289223ebbc494f9a7b0bdd99161af
+      internalID: 895954731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bandicam_2024-07-30_19-10-09-150_0: 347183224
+      bandicam_2024-07-30_19-10-09-150_1: -499567849
+      bandicam_2024-07-30_19-10-09-150_10: -1492174894
+      bandicam_2024-07-30_19-10-09-150_11: 2108246545
+      bandicam_2024-07-30_19-10-09-150_12: 518819043
+      bandicam_2024-07-30_19-10-09-150_13: -1640278187
+      bandicam_2024-07-30_19-10-09-150_14: 1141603672
+      bandicam_2024-07-30_19-10-09-150_15: 895954731
+      bandicam_2024-07-30_19-10-09-150_2: 7978429
+      bandicam_2024-07-30_19-10-09-150_3: 850618026
+      bandicam_2024-07-30_19-10-09-150_4: -849996625
+      bandicam_2024-07-30_19-10-09-150_5: 695560637
+      bandicam_2024-07-30_19-10-09-150_6: 784404583
+      bandicam_2024-07-30_19-10-09-150_7: 1640632960
+      bandicam_2024-07-30_19-10-09-150_8: 1792128746
+      bandicam_2024-07-30_19-10-09-150_9: 1181530651
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
