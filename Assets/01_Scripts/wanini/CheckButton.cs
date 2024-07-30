@@ -40,12 +40,12 @@ public class CheckButton : MonoBehaviour
     {
         father.DOScale(new Vector2(0.6817501f, 0.8f), 0.2f).SetEase(Ease.InBounce);
         question.DOScale(new Vector2(1, 1), 0.2f).SetEase(Ease.InBounce).SetDelay(1);
-        // 플레이어 멈추기
+       
     }
 
     public void PressEmpty() // 버튼 클릭
     {
-        if (!_already) // 이미 클릭되었는지 확인
+        if (!_already)
         {
             check.DOFade(1, 1f);
             StartCoroutine(Check());
@@ -53,7 +53,7 @@ public class CheckButton : MonoBehaviour
         }
     }
 
-    IEnumerator Check() // 미션창 띄우기
+    IEnumerator Check()
     {
         yield return new WaitForSeconds(1.5f);
         question.DOScale(new Vector2(1, 0), 0.2f).SetEase(Ease.InBounce);
@@ -66,7 +66,11 @@ public class CheckButton : MonoBehaviour
         yield return new WaitForSeconds(1f);
         canvasGroup.DOFade(1, 0.1f);
         yield return new WaitForSeconds(0.3f);
-        card[Random.Range(0, card.Count)].SetActive(true); // 카드 선택 범위 수정
+
+        card[Random.Range(0, card.Count)].SetActive(true); 
+
+        
+
         canvasGroup.DOFade(0, 1);
     }
 
@@ -108,7 +112,7 @@ public class CheckButton : MonoBehaviour
             good.DOFade(1, 1);
             yield return new WaitForSeconds(1.5f);
             good.DOFade(0, 1);
-        }
+        }   
 
         yield return new WaitForSeconds(0.5f);
         father.DOScale(new Vector2(0.6817501f, 0f), 0.2f).SetEase(Ease.InBounce);

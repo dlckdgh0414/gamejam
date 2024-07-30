@@ -19,7 +19,7 @@ public class KillUI : MonoBehaviour
         Color c = Color.red;
         c.a = 0;
         image.color = Color.red;
-        image.DOColor(c, 0.3f);
+        image.DOColor(c, 1f);
         //GameObject.Find("")GetComponent<ParticleSystem>().Play();
     }
 }
