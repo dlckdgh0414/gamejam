@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79d03fbdf07827844a5a6c2e088823da
+guid: fe75738a81f4fed4285a8ec227e411f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,337 +97,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bird_0
+      name: sky_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 375
-        width: 125
-        height: 125
+        y: 393.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 135cf5f28f44b514986851b13b84a09e
-      internalID: 1368984603
+      spriteID: e0ad7b55322818d44b8732c6f7d7972c
+      internalID: 1366135454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_1
+      name: sky_1
       rect:
         serializedVersion: 2
-        x: 126
-        y: 375
-        width: 125
-        height: 125
+        x: 131
+        y: 393.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 174fda5ccad706e48a2a1070b5df6b4b
-      internalID: -996572118
+      spriteID: f7445816b00dcf846b6e453a1c139a89
+      internalID: -710464361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_2
+      name: sky_2
       rect:
         serializedVersion: 2
-        x: 250
-        y: 375
-        width: 125
-        height: 125
+        x: 262
+        y: 393.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8efbb7fd1ea50d549ae1abb5266bb027
-      internalID: -1453851538
+      spriteID: 315c45d99a3dfec4d96f66ab1a3a0f7e
+      internalID: 39992638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_3
+      name: sky_3
       rect:
         serializedVersion: 2
-        x: 375
-        y: 375
-        width: 125
-        height: 125
+        x: 393
+        y: 393.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5560d31563ab96c409ed193c4fc0e7fc
-      internalID: 661492955
+      spriteID: 8940a741887599f4c88540ccec5c7ab9
+      internalID: -918557438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 250
-        width: 125
-        height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c09b53aa4e9fcb84ba7bd2487ee59d5a
-      internalID: 506261104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bird_5
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 250
-        width: 125
-        height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fd4beefaa7c3c64a9330fb188de93f8
-      internalID: -1934237580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bird_6
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 250
-        width: 125
-        height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dee260c4c33b9c469d62abb09d3e174
-      internalID: 45264528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bird_7
-      rect:
-        serializedVersion: 2
-        x: 375
-        y: 250
-        width: 125
-        height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b4b735ca3bf3ee4db4a58243a17eb48
-      internalID: -700012083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bird_8
+      name: sky_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 125
-        width: 125
-        height: 125
+        y: 262.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8936d9f35bff5e48a614c396731e549
-      internalID: -1477343708
+      spriteID: 0f84850a669fafa488f1b452e0c7e20f
+      internalID: 181619920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_9
+      name: sky_5
       rect:
         serializedVersion: 2
-        x: 125
-        y: 125
-        width: 125
-        height: 125
+        x: 131
+        y: 262.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7859764873d7ef48a83b7b0a2667a46
-      internalID: 822361661
+      spriteID: 008be2696793198438b040243e5ff1ef
+      internalID: 1439710266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_10
+      name: sky_6
       rect:
         serializedVersion: 2
-        x: 250
-        y: 125
-        width: 125
-        height: 125
+        x: 262
+        y: 241
+        width: 131
+        height: 154
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e0f9ec3b41a80845816c360ffe916d7
-      internalID: -1927383100
+      spriteID: f734d34d7765a004abf7aaac9be3e30b
+      internalID: -1255433969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_11
+      name: sky_7
       rect:
         serializedVersion: 2
-        x: 375
-        y: 125
-        width: 125
-        height: 125
+        x: 393
+        y: 241
+        width: 131
+        height: 154
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9456ab4fffa85374a91b9a47c70ff59f
-      internalID: 28343940
+      spriteID: f62e19941b11a4a48835a0cc4f01072a
+      internalID: 1023071374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_12
+      name: sky_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 125
-        height: 125
+        y: 131.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c591b8390b19a97478ecb6ac5c6755f9
-      internalID: 721636778
+      spriteID: c42584d6554e75443b7d236cd4724d49
+      internalID: 158826563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_13
+      name: sky_9
       rect:
         serializedVersion: 2
-        x: 125
-        y: 0
-        width: 125
-        height: 125
+        x: 131
+        y: 131.75
+        width: 131.25
+        height: 131.25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a3571aa96ee2fa42ad9078221809c4d
-      internalID: 21616080
+      spriteID: aba37d48aefdb9b4b98390515970c3d6
+      internalID: 1072182738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_14
+      name: sky_10
       rect:
         serializedVersion: 2
-        x: 250
-        y: 0
-        width: 125
-        height: 125
+        x: 262
+        y: 132
+        width: 131
+        height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bce540efbf5980247a9370743f427399
-      internalID: 421943380
+      spriteID: 4965b773ab1d148458582ee4dc74e61b
+      internalID: -323930102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_15
+      name: sky_11
       rect:
         serializedVersion: 2
-        x: 375
-        y: 0
-        width: 125
-        height: 125
+        x: 393
+        y: 132
+        width: 131
+        height: 107
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ebbb84ad4256704f93ff503c41b7881
-      internalID: 228381706
+      spriteID: d88ab932b6294ce4e9565d901c8134b7
+      internalID: 853268149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 131.25
+        height: 131.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ad6ae4bbbbd1f48b3435456600a82e
+      internalID: 2039809153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0.75
+        width: 131.25
+        height: 131.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deea8226d7ff68b4dbfa1d47f97a08fc
+      internalID: -741568486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_14
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0.75
+        width: 131.25
+        height: 131.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722d1c8e37aa9024791d8c6aae9292e4
+      internalID: 1575803289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_15
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 0.75
+        width: 131.25
+        height: 131.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c67e3e529486c4db776264a5899230
+      internalID: -831575399
       vertices: []
       indices: 
       edges: []
@@ -443,22 +443,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bird_0: 1368984603
-      bird_1: -996572118
-      bird_10: -1927383100
-      bird_11: 28343940
-      bird_12: 721636778
-      bird_13: 21616080
-      bird_14: 421943380
-      bird_15: 228381706
-      bird_2: -1453851538
-      bird_3: 661492955
-      bird_4: 506261104
-      bird_5: -1934237580
-      bird_6: 45264528
-      bird_7: -700012083
-      bird_8: -1477343708
-      bird_9: 822361661
+      sky_0: 1366135454
+      sky_1: -710464361
+      sky_10: -323930102
+      sky_11: 853268149
+      sky_12: 2039809153
+      sky_13: -741568486
+      sky_14: 1575803289
+      sky_15: -831575399
+      sky_2: 39992638
+      sky_3: -918557438
+      sky_4: 181619920
+      sky_5: 1439710266
+      sky_6: -1255433969
+      sky_7: 1023071374
+      sky_8: 158826563
+      sky_9: 1072182738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
