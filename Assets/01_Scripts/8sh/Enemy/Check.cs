@@ -9,69 +9,74 @@ public class Check : MonoBehaviour
     [SerializeField] private GameObject fire;
     [SerializeField] private float _dlay;
 
-    public Light2D lightSource;
     public Transform player;
     public LayerMask wallLayer;
-    public LayerMask playerLayer;
+    private Light2D light2D;
 
-    private void Update()
+    private bool active = true;
+
+    void Start()
     {
-        Vector3 directionToPlayer = player.position - lightSource.transform.position;
-        float distanceToPlayer = directionToPlayer.magnitude;
-        if (distanceToPlayer <= lightSource.pointLightOuterRadius)
-        {
-            RaycastHit2D hit = Physics2D.Raycast(lightSource.transform.position, directionToPlayer, distanceToPlayer, wallLayer);
-            if (hit.collider == null)
-            {
-                Collider2D playerCollider = Physics2D.OverlapCircle(player.position, 0.1f, playerLayer);
-                if (playerCollider != null)
-                {
-                    Debug.Log("Player is visible.");
+        light2D = GetComponent<Light2D>();
+    }
 
-                    if (!_enemy.IsDie)
-                    {
-                        StartCoroutine(DelayTime(_dlay));
-                    }
-                }
-            }
+    void Update()
+    {
+        if (IsPlayerInLight() && !IsPlayerBlockedByWall() && active)
+        {
+            active = false;
+            Debug.Log("Player is in the light and not blocked by a wall.");
+            StartCoroutine(DelayTime(_dlay));
         }
+    }
+
+    bool IsPlayerInLight()
+    {
+        // 플레이어 위치가 라이트 범위 안에 있는지 확인
+        Vector2 playerPos = player.position;
+        Vector2 lightPos = transform.position;
+        float lightRadius = light2D.pointLightOuterRadius;
+        float distanceToPlayer = Vector2.Distance(lightPos, playerPos);
+
+        if (distanceToPlayer > lightRadius)
+        {
+            return false;
+        }
+
+        Vector2 directionToPlayer = (playerPos - lightPos).normalized;
+        float lightAngle = Vector2.Angle(light2D.transform.up, directionToPlayer);
+
+        if (lightAngle <= light2D.pointLightOuterAngle / 2f)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    bool IsPlayerBlockedByWall()
+    {
+        Vector2 direction = player.position - transform.position;
+        float distance = Vector2.Distance(transform.position, player.position);
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, wallLayer);
+        return hit.collider != null;
     }
 
     private IEnumerator DelayTime(float delayTime)
     {
         yield return new WaitForSeconds(delayTime);
-        Vector3 directionToPlayer = player.position - lightSource.transform.position;
-        float distanceToPlayer = directionToPlayer.magnitude;
-        if (distanceToPlayer <= lightSource.pointLightOuterRadius)
+        if (IsPlayerInLight() && !IsPlayerBlockedByWall())
         {
-            RaycastHit2D hit = Physics2D.Raycast(lightSource.transform.position, directionToPlayer, distanceToPlayer, wallLayer);
-            if (hit.collider == null)
+            Debug.Log("죽어랑");
+            if (!_enemy.IsDie)
             {
-                Collider2D playerCollider = Physics2D.OverlapCircle(player.position, 0.1f, playerLayer);
-                if (playerCollider != null)
-                {
-                    Debug.Log("Player is visible.");
-
-                    if (!_enemy.IsDie)
-                    {
-                        fire.SetActive(true);
-                        _enemy.GetPlayerEvent?.Invoke();
-                    }
-                }
+                fire.SetActive(true);
+                _enemy.GetPlayerEvent?.Invoke();
             }
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (lightSource != null && player != null)
+        }else
         {
-            Gizmos.color = Color.red;
-            Vector3 directionToPlayer = player.position - lightSource.transform.position;
-            Gizmos.DrawRay(lightSource.transform.position, directionToPlayer);
-
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(player.position, 0.1f);
+            active = true;
         }
     }
 }
