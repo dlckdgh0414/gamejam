@@ -51,6 +51,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        if (playerInput.moveDir != Vector2.zero)
+        {
+            moving = true;
+        }
+        else moving = false;
         SetSpeed();
         rigidbody2d.velocity = playerInput.moveDir * speed;
     }
