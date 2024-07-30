@@ -49,13 +49,16 @@ public class CaptchaRotate : MonoBehaviour
             OnFail();
     }
 
-    private void OnSucess() //성공했을때
+    private void OnSucess()
     {
-        Debug.Log("성공");
+        CheckButton.instance.Good();
+
+
     }
 
-    private void OnFail() //실패했을때
+    private void OnFail()
     {
-        Debug.Log("실패");
+        CheckButton.instance.Bad();
+
     }
 }
