@@ -12934,7 +12934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -82.600044, y: 34.399994}
+  m_AnchoredPosition: {x: -82.60004, y: 34.399994}
   m_SizeDelta: {x: -195, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762328900
@@ -14182,7 +14182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255031507}
   - component: {fileID: 1255031508}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14746,7 +14746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fcd1e5f1373e04eaee02d6d72c2c28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   maxSpeed: 0
   active: 1
   moving: 0
@@ -14788,7 +14788,7 @@ Rigidbody2D:
   m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1291320428
 BoxCollider2D:
   m_ObjectHideFlags: 0
