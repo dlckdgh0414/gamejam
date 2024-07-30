@@ -10,7 +10,7 @@ public enum EnemyEnum
     Dead
 }
 
-public class Enemy : EnemySetting
+public class EnemyStateAdd : EnemySetting
 {
     public StateMachine<EnemyEnum> StateMachine { get; private set; }
 
