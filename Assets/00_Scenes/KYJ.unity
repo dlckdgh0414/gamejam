@@ -10042,6 +10042,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1064621764}
     m_Modifications:
+    - target: {fileID: 707757216486093021, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 707757216486093021, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.48810166
+      objectReference: {fileID: 0}
+    - target: {fileID: 707757216486093021, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.26226407
+      objectReference: {fileID: 0}
+    - target: {fileID: 707757216486093021, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.42075467
+      objectReference: {fileID: 0}
+    - target: {fileID: 707757216486093021, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.94207543
+      objectReference: {fileID: 0}
+    - target: {fileID: 707757216486093021, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1740669173375664856, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
       propertyPath: m_Name
       value: Electric shock Effect Parent
@@ -10049,6 +10073,18 @@ PrefabInstance:
     - target: {fileID: 1914353457747672362, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
       propertyPath: LightsModule.light
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914353457747672362, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914353457747672362, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914353457747672362, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.4711113
       objectReference: {fileID: 0}
     - target: {fileID: 1914353457747672362, guid: f476fcbb608b20a4b9aae27d781dc491, type: 3}
       propertyPath: SubModule.subEmitters.Array.data[0].emitter
