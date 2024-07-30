@@ -12,23 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bfd1d431ff3144abebeb128b20c485, type: 3}
   m_Name: Sky
   m_EditorClassIdentifier: 
-  cardName: "\uBC9B\uAF43\uB098\uBB34"
+  cardName: "\uD558\uB298"
   sprite:
-  - {fileID: 347183224, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: -499567849, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 7978429, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 850618026, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: -849996625, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 695560637, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 784404583, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 1640632960, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 1792128746, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 1181530651, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: -1492174894, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 2108246545, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 518819043, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: -1640278187, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 1141603672, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  - {fileID: 895954731, guid: 3c3026b767c8eba409d3677b935bf6a7, type: 3}
-  correctCard: 0600000007000000090000000a0000000b0000000e0000000f000000
-  probability: 80
+  - {fileID: 1366135454, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: -710464361, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 39992638, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: -918557438, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 181619920, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 1439710266, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: -1255433969, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 1023071374, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 158826563, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 1072182738, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: -323930102, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 853268149, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 2039809153, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: -741568486, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: 1575803289, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  - {fileID: -831575399, guid: fe75738a81f4fed4285a8ec227e411f2, type: 3}
+  correctCard: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a000000
