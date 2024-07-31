@@ -16,7 +16,7 @@ public class ExitDoor : MonoBehaviour
 
     private void Update()
     {
-        if (KeycardManager.instance._keycard)
+        if (KeyCardManager.instance._keycard)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
