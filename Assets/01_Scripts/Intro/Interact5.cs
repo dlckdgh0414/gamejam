@@ -40,6 +40,7 @@ public class Interact5 : MonoBehaviour
 
     IEnumerator talkwith()
     {
+        _istalking = true;
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = false;
         WaitForSeconds wait = new WaitForSeconds(1);
 
