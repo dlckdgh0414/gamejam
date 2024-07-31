@@ -13,6 +13,15 @@ public class ChatManager : MonoBehaviour
     [SerializeField] TMP_Text _name;
     public bool isended;
     public bool isclosed;
+    public bool _canskip;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && !_canskip)
+        {
+            _canskip = true;
+        }
+    }
 
     private void Awake()
     {
@@ -23,6 +32,7 @@ public class ChatManager : MonoBehaviour
 
      StartCoroutine(Test());
     }
+
 
     public IEnumerator Test()
     {
@@ -37,6 +47,11 @@ public class ChatManager : MonoBehaviour
 
     }
 
+    public void Type(string text, float rate)
+    {
+        StartCoroutine(Typing(text, rate));
+    }
+        
     public void OpenChat(string name)
     {
         chatwindow.DOAnchorPos(new Vector2(0,   -135), 1).SetEase(Ease.InSine);
@@ -44,15 +59,28 @@ public class ChatManager : MonoBehaviour
         _name.text = name;
     }
 
-    public IEnumerator Typing( string text, float rate)
+    public IEnumerator Typing(string text, float rate)
     {
-        for (int i = 0; i <= text.Length; i++)
+        txtObj.text = "";
+        for (int i = 0; i < text.Length; i++)
         {
-            txtObj.text = text.Substring(0, i);
-            if (txtObj.text.Length > 0 && txtObj.text[txtObj.text.Length - 1] != ' ') asudio.Play();
+            txtObj.text += text[i];
+            if (text[i] != ' ')
+            {
+                asudio.Play();
+            }
+
+            if (_canskip)
+            {
+                txtObj.text = text;
+                break;
+            }
+
             yield return new WaitForSecondsRealtime(rate);
         }
+
         isended = true;
+        _canskip = true;
     }
 
     public void CloseChat()
