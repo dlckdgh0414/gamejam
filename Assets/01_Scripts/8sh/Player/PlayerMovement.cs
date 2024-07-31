@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public bool active = true;
     public bool moving = false;
     private bool dashable = true;
-    private bool isDashing = false;
+    public bool isDashing = false;
 
     private WaitForSecondsRealtime dashCooldownWFSR;
     private WaitForSecondsRealtime dashDurationWFSR;

@@ -9,6 +9,11 @@ public class PlayerInput : MonoBehaviour
     public event Action OnDashInput;
     public Vector2 moveDir { get; set; }
 
+    private void Awake()
+    {
+        moveComp = GetComponent<PlayerMovement>();
+    }
+
     private void Update()
     {
         GetMoveInput();
