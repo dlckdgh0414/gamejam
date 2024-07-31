@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bfd1d431ff3144abebeb128b20c485, type: 3}
   m_Name: House
   m_EditorClassIdentifier: 
-  cardName: "\uBC9B\uAF43\uB098\uBB34"
+  cardName: "\uC0C8"
   sprite:
   - {fileID: 1368984603, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}
   - {fileID: -996572118, guid: 79d03fbdf07827844a5a6c2e088823da, type: 3}

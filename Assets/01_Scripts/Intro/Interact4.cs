@@ -40,7 +40,7 @@ public class Interact4 : MonoBehaviour
     IEnumerator talkwith()
     {
         WaitForSeconds wait = new WaitForSeconds(1);
-
+        GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = false;
         ChatManager.instance.OpenChat("¿¬±¸¿ø");
 
         yield return new WaitUntil(() => ChatManager.instance.isclosed); ChatManager.instance.isclosed = false;
@@ -99,7 +99,7 @@ public class Interact4 : MonoBehaviour
         yield return new WaitUntil(() => ChatManager.instance.isended); ChatManager.instance.isended = false;
 
         KeycardManager.instance.getkeycard();
-
+        GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = true;
         yield return wait;
         yield return wait;
 
