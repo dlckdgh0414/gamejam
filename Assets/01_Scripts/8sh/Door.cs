@@ -28,15 +28,16 @@ public class Door : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         canOpen = false;
+        solving = false;
     }
 
     private void Update()
     {
-        if (canOpen && Input.GetKeyDown(KeyCode.F))
+        if (canOpen && Input.GetKeyDown(KeyCode.F) && enable)
         {
             DoorInteract();
         }
-        if (solving && CheckButton.instance.success)
+        if (solving && CheckButton.instance.success && enable)
         {
             enable = false;
             animator.SetBool("Open", true);
@@ -49,6 +50,7 @@ public class Door : MonoBehaviour
     {
         if (canOpen && enable)
         {
+            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = false;
             verify.SetActive(true);
             solving = true;
             CheckButton.instance.lego();
