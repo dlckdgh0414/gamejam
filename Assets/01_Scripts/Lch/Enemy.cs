@@ -17,6 +17,7 @@ public class EnemyStateAdd : EnemySetting
     public override void SetDeadState()
     {
         StateMachine.ChangeState(EnemyEnum.Dead);
+        EnemyKillCounter.instance.Count();
     }
 
     public void GetPlayer()
