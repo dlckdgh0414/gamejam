@@ -1,8 +1,10 @@
+#if UNITY_EDITOR
 using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+
 
 [RequireComponent(typeof(CompositeCollider2D))]
 public class ShadowCaster2DCreator : MonoBehaviour
@@ -80,3 +82,4 @@ public class ShadowCaster2DTileMapEditor : Editor
         EditorGUILayout.EndHorizontal();
     }
 }
+#endif
