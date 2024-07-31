@@ -88,7 +88,7 @@ MonoBehaviour:
   - {x: -6.9999704, y: -24, z: 0}
   m_ShapePathHash: -1276540714
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71332
+  m_InstanceId: 151514
   m_LocalBounds:
     m_Center: {x: 1.5, y: -17, z: 0}
     m_Extent: {x: 8.5, y: 7, z: 0}
@@ -189,7 +189,7 @@ MonoBehaviour:
   - {x: -19.999971, y: -24, z: 0}
   m_ShapePathHash: -76649092
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71120
+  m_InstanceId: 151302
   m_LocalBounds:
     m_Center: {x: -16.000015, y: -17, z: 0}
     m_Extent: {x: 3.9999852, y: 7, z: 0}
@@ -327,7 +327,7 @@ MonoBehaviour:
   - {x: 15.000029, y: -24, z: 0}
   m_ShapePathHash: 1797104745
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71324
+  m_InstanceId: 151506
   m_LocalBounds:
     m_Center: {x: 18.999985, y: -17, z: 0}
     m_Extent: {x: 3.9999857, y: 7, z: 0}
@@ -26097,7 +26097,7 @@ MonoBehaviour:
   - {x: 15.000029, y: 0, z: 0}
   m_ShapePathHash: 1216484801
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71136
+  m_InstanceId: 151318
   m_LocalBounds:
     m_Center: {x: 19, y: 6, z: 0}
     m_Extent: {x: 4, y: 6, z: 0}
@@ -26343,7 +26343,7 @@ GameObject:
   - component: {fileID: 4224314410006816559}
   - component: {fileID: 7239267795823952900}
   - component: {fileID: 4099673449522631460}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BackWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33450,7 +33450,7 @@ MonoBehaviour:
   - {x: -19.999971, y: 0, z: 0}
   m_ShapePathHash: -1519143144
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71074
+  m_InstanceId: 151256
   m_LocalBounds:
     m_Center: {x: -15.5, y: 6, z: 0}
     m_Extent: {x: 4.5, y: 6, z: 0}
@@ -33626,7 +33626,7 @@ MonoBehaviour:
   - {x: -5.999971, y: 0, z: 0}
   m_ShapePathHash: 1586089309
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71182
+  m_InstanceId: 151364
   m_LocalBounds:
     m_Center: {x: 1.9999852, y: 6, z: 0}
     m_Extent: {x: 7.999985, y: 6, z: 0}
@@ -33640,7 +33640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6819875379207424824}
   - component: {fileID: 4330925053658931018}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Stage 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

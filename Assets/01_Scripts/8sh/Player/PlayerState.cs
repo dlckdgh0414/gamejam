@@ -19,7 +19,7 @@ public class PlayerState : MonoBehaviour
 
     private IEnumerator ShowUI()
     {
-        yield return new WaitForSecondsRealtime(0.3f);
+        yield return new WaitForSecondsRealtime(0.2f);
         GameObject.FindWithTag("MainCamera").GetComponent<AudioListener>().enabled = false;
         gameOverUI.SetActive(true);
         yield return new WaitForSecondsRealtime(2f);

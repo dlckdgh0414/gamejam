@@ -12,6 +12,6 @@ public class StartFade2 : MonoBehaviour
         c.a = 0;
         Image img = GetComponent<Image>();
         img.color = Color.black;
-        img.DOColor(c, 2f);
+        img.DOColor(c, 2f).SetDelay(2);
     }
 }
