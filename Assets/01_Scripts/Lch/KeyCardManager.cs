@@ -4,15 +4,9 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 
-<<<<<<<< HEAD:Assets/01_Scripts/Lch/KeyCardTest.cs
-public class KeyCardTest : MonoBehaviour
-{
-    public static KeyCardTest instance;
-========
 public class KeyCardManager : MonoBehaviour
 {
     public static KeyCardManager instance;
->>>>>>>> origin/Base2:Assets/01_Scripts/Lch/KeyCardManager.cs
 
     [SerializeField] private GameObject keycard;
     [SerializeField] private TMP_Text alarm;
