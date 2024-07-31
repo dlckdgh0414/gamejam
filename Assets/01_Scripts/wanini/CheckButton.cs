@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class CheckButton : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class CheckButton : MonoBehaviour
     [SerializeField] RectTransform father;
     [SerializeField] TextMeshProUGUI good;
     [SerializeField] TextMeshProUGUI bad;
+    [SerializeField] FuelHandler fuel;
+    [SerializeField] ParticleSystem _particle;
+    [SerializeField] Transform _playerTrm;
+
+    public UnityEvent OnFailEvent;
 
     public int stage;
     public bool success;
@@ -91,6 +97,14 @@ public class CheckButton : MonoBehaviour
     public void Bad() // 실패
     {
         StartCoroutine(ShowResult(true));
+
+        ParticleSystem particle = Instantiate(_particle,
+            _playerTrm.position, Quaternion.identity, _playerTrm);
+
+        particle.Play();
+        fuel.fuel -= 5;
+
+        OnFailEvent?.Invoke();
     }
 
     IEnumerator ShowResult(bool isBad) // 결과 표시
