@@ -47,11 +47,11 @@ TagManager:
   - name: Background
     uniqueID: 1270466553
     locked: 0
-  - name: Forground
-    uniqueID: 1146901793
-    locked: 0
   - name: Agent
     uniqueID: 1830488789
+    locked: 0
+  - name: Forground
+    uniqueID: 1146901793
     locked: 0
   - name: UI
     uniqueID: 3826574933

@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class CheckButton : MonoBehaviour
 {
@@ -18,14 +19,19 @@ public class CheckButton : MonoBehaviour
     [SerializeField] RectTransform father;
     [SerializeField] TextMeshProUGUI good;
     [SerializeField] TextMeshProUGUI bad;
+    [SerializeField] FuelHandler fuel;
+    [SerializeField] ParticleSystem _particle;
+    [SerializeField] Transform _playerTrm;
+
+    public UnityEvent OnFailEvent;
 
     public int stage;
-    public bool success;
+
     bool _already;
 
     private void Start()
     {
-        //lego();
+        lego();
     }
 
     private void Awake()
@@ -40,7 +46,6 @@ public class CheckButton : MonoBehaviour
     {
         father.DOScale(new Vector2(0.6817501f, 0.8f), 0.2f).SetEase(Ease.InBounce);
         question.DOScale(new Vector2(1, 1), 0.2f).SetEase(Ease.InBounce).SetDelay(1);
-        success = false;
         // 플레이어 멈추기
     }
 
@@ -91,6 +96,14 @@ public class CheckButton : MonoBehaviour
     public void Bad() // 실패
     {
         StartCoroutine(ShowResult(true));
+
+        ParticleSystem particle = Instantiate(_particle,
+            _playerTrm.position, Quaternion.identity, _playerTrm);
+
+        particle.Play();
+        fuel.fuel -= 5;
+
+        OnFailEvent?.Invoke();
     }
 
     IEnumerator ShowResult(bool isBad) // 결과 표시
@@ -100,14 +113,12 @@ public class CheckButton : MonoBehaviour
 
         if (isBad)
         {
-            success = false;
             bad.DOFade(1, 1);
             yield return new WaitForSeconds(1);
             bad.DOFade(0, 1);
         }
         else
         {
-            success = true;
             good.DOFade(1, 1);
             yield return new WaitForSeconds(1.5f);
             good.DOFade(0, 1);
