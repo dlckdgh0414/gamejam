@@ -31,7 +31,7 @@ public class ExitDoor : MonoBehaviour
 
     private void Update()
     {
-        if (KeycardManager.instance._keycard && canOpen && enable)
+        if (KeyCardManager.instance._keycard && canOpen && enable)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
