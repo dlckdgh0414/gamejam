@@ -17,7 +17,6 @@ public class SettingUI : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //settingUi.SetActive(true);
             settingUi.transform.DOMoveX(130f, 0.5f);
             //Time.timeScale = 0;
         }
@@ -31,12 +30,18 @@ public class SettingUI : MonoBehaviour
 
     public void OnClickContinue()
     {
-        settingUi.transform.DOMoveX(-130f, 0.5f);
-        //settingUi.SetActive(false);
-        //Time.timeScale = 1;
+        settingUi.transform.DOMoveX(-170f, 0.5f);
+
     }
 
     public void OnClickExit()
+    {
+        Application.Quit();
+        //SceneManager.LoadScene();
+        //첫 번째 메인화면 씬 넘버를 입력해주세요.
+    }
+    
+    public void OnClickMainMenu()
     {
         //SceneManager.LoadScene();
         //첫 번째 메인화면 씬 넘버를 입력해주세요.
