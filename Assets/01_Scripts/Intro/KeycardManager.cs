@@ -12,6 +12,7 @@ public class KeycardManager : MonoBehaviour
     [SerializeField] private TMP_Text alarm;
 
 
+
     public bool _keycard;
 
     private void Awake()
