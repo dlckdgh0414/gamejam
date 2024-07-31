@@ -23,6 +23,6 @@ public class PlayerState : MonoBehaviour
         GameObject.FindWithTag("MainCamera").GetComponent<AudioListener>().enabled = false;
         gameOverUI.SetActive(true);
         yield return new WaitForSecondsRealtime(2f);
-        SceneManager.LoadScene("Stage1_REMOTE_556");
+        SceneManager.LoadScene(1);
     }
 }
