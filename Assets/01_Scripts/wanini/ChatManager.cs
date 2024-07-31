@@ -35,7 +35,7 @@ public class ChatManager : MonoBehaviour
             instance = this;
         }
 
-        StartCoroutine(Test());
+        //dStartCoroutine(Test());
     }
 
     public void StartBtn()
@@ -102,7 +102,6 @@ public class ChatManager : MonoBehaviour
 
     public void CloseChat()
     {
-        txtObj.text = "";
         chatwindow.DOAnchorPos(new Vector2(0, -450), 1f).SetEase(Ease.OutSine);
         isclosed = false;
     }

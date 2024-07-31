@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: UM
   m_EditorClassIdentifier: 
   sprite:
-  - {fileID: 21300000, guid: 2c7b5144d3b458b49a56450ed93e18a6, type: 3}
-  - {fileID: 21300000, guid: dc608da2ea1cebe4db01939d4eed8cad, type: 3}
-  - {fileID: 21300000, guid: 1566b3f427c30c64db3ffc0e31257dd4, type: 3}
-  - {fileID: 21300000, guid: 58094e2ec45f7480e81fb4a78bc2dd66, type: 3}
-  - {fileID: 220009051, guid: 678b52f28b3f89f4ea3e9fa4056b2fa3, type: 3}
+  - {fileID: -2135585597343286014, guid: eed45a33cd08446c8b88325cf82fc52f, type: 3}
+  - {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  - {fileID: -5177388603050735206, guid: cc35afd292fc349128b36a291fb3a165, type: 3}
+  - {fileID: 2747690628134850419, guid: 16037dbd798344f57a526d53d48f5ead, type: 3}
+  - {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   correctSprite: {fileID: 21300000, guid: a07f3c3e6db4c9b43bc3a3206ebef6b9, type: 3}
   cardName: "\uBCF4\uB77C\uC0C9 \uB3C4\uD615"
