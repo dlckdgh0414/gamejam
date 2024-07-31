@@ -40,7 +40,6 @@ public class ExitDoor : MonoBehaviour
                 _anim.SetBool("Open", true);
                 SceneManager.LoadScene(ScenNum);
                 ChatManager.instance.countss =+ 1;
-
             }
         }
     }
