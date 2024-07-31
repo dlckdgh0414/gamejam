@@ -59,7 +59,7 @@ public class ChatSystem : MonoBehaviour
 
         txtObj.DOFade(0, 1);
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void OpenChat()
