@@ -10,13 +10,7 @@ public class Interact : MonoBehaviour
     bool _istalking;
     public PlayerMovement movement;
 
-    private void Awake()
-    {
-        movement = GetComponent<PlayerMovement>();
-    }
-
-    
-
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

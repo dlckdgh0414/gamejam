@@ -8,6 +8,7 @@ public class Interact2 : MonoBehaviour
     [SerializeField] private List<string> speech;
     bool _isin;
     bool _istalking;
+    public PlayerMovement movement;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,11 +28,9 @@ public class Interact2 : MonoBehaviour
         }
 
     }
-
-
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && _isin && !_istalking)
+        if (Input.GetKeyDown(KeyCode.F) && _isin && !_istalking && !movement.isDashing)
         {
             StartCoroutine(talkwith());
         }
