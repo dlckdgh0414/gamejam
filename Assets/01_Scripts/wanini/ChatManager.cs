@@ -10,8 +10,18 @@ public class ChatManager : MonoBehaviour
     [SerializeField] TMP_Text txtObj;
     [SerializeField] RectTransform chatwindow;
     [SerializeField] AudioSource asudio;
+    [SerializeField] TMP_Text _name;
     public bool isended;
     public bool isclosed;
+    public bool _canskip;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && !_canskip)
+        {
+            _canskip = true;
+        }
+    }
 
     private void Awake()
     {
@@ -23,39 +33,59 @@ public class ChatManager : MonoBehaviour
      StartCoroutine(Test());
     }
 
+
     public IEnumerator Test()
     {
-        OpenChat();
+        OpenChat("");
 
         yield return new WaitUntil(() => isclosed); isclosed = false;
         yield return new WaitForSeconds(0.5f);
-        StartCoroutine(Typing("세현이네 똘똘이 포켓몬들 5총사 흥해라 ", 0.1f));
+        StartCoroutine(Typing("여기서 나가겠어.", 0.1f));
         yield return new WaitUntil(() => isended); isended = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         CloseChat();
 
     }
 
-    public void OpenChat()
+    public void Type(string text, float rate)
     {
-        chatwindow.DOAnchorPos(new Vector2(0, -160), 1).SetEase(Ease.Flash);
+        StartCoroutine(Typing(text, rate));
+    }
+        
+    public void OpenChat(string name)
+    {
+        chatwindow.DOAnchorPos(new Vector2(0,   -135), 1).SetEase(Ease.InSine);
         isclosed = true;
+        _name.text = name;
     }
 
-    public IEnumerator Typing( string text, float rate)
+    public IEnumerator Typing(string text, float rate)
     {
-        for (int i = 0; i <= text.Length; i++)
+        txtObj.text = "";
+        for (int i = 0; i < text.Length; i++)
         {
-            txtObj.text = text.Substring(0, i);
-            if (txtObj.text.Length > 0 && txtObj.text[txtObj.text.Length - 1] != ' ') asudio.Play();
+            txtObj.text += text[i];
+            if (text[i] != ' ')
+            {
+                asudio.Play();
+            }
+
+            if (_canskip)
+            {
+                txtObj.text = text;
+                break;
+            }
+
             yield return new WaitForSecondsRealtime(rate);
         }
+
         isended = true;
+        _canskip = true;
     }
 
     public void CloseChat()
     {
-        chatwindow.DOAnchorPos(new Vector2(0, -450), 0.5f).SetEase(Ease.Flash);
+        chatwindow.DOAnchorPos(new Vector2(0, -450), 1f).SetEase(Ease.OutSine);
     }
 
 
