@@ -39,6 +39,7 @@ public class Interact3 : MonoBehaviour
 
     IEnumerator talkwith()
     {
+        _istalking = true;
         WaitForSeconds wait = new WaitForSeconds(1);
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = false;
         ChatManager.instance.OpenChat("¿¬±¸¿ø");

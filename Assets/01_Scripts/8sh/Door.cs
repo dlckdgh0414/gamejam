@@ -51,9 +51,9 @@ public class Door : MonoBehaviour
         if (canOpen && enable)
         {
             GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = false;
-            verify.SetActive(true);
-            solving = true;
             CheckButton.instance.lego();
+            solving = true;
+           
         }
     }
 }
