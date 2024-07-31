@@ -30,4 +30,5 @@ MonoBehaviour:
   - {fileID: 1999227363, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
   - {fileID: 195937884, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
   - {fileID: -1928962108, guid: 5183745d43a34f3499b2e99e50824fde, type: 3}
-  correctCard: 0a0000000e0000000f000000
+  correctCard: 0a0000000e000000
+  probability: 5

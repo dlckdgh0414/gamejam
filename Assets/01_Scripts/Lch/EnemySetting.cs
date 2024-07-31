@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Audio;
 
 public abstract class EnemySetting : EnemyAgent
 {
@@ -12,10 +11,6 @@ public abstract class EnemySetting : EnemyAgent
     public UnityEvent GetPlayerEvent;
 
     public UnityEvent GetAttackEvenet;
-
-    public GameObject _Light;
-
-    public AudioSource _Sfx;
 
     public Transform[] waypoints;
     public int currentWaypointIndex = 0;
