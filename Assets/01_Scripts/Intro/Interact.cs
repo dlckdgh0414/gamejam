@@ -9,6 +9,9 @@ public class Interact : MonoBehaviour
     bool _isin;
     bool _istalking;
 
+    public FuelHandler _talkfuel;
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
