@@ -7,7 +7,7 @@ public class Interact : MonoBehaviour
     [SerializeField] private GameObject interactText;
     [SerializeField] private List<string> speech;
     bool _isin;
-    bool _istalked;
+    bool _istalking;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,20 +31,9 @@ public class Interact : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && _isin )
+        if (Input.GetKeyDown(KeyCode.F) && _isin && !_istalking)
         {
-
-            if (!_istalked)
-            {
-               _istalked = true;
-
-                StartCoroutine(talkwith());
-
-            }
-            else
-            {
-                
-            }
+            StartCoroutine(talkwith());
         }
     }
 
@@ -109,7 +98,7 @@ public class Interact : MonoBehaviour
         ChatManager.instance.Type(speech[9], 0.1f);
         yield return new WaitUntil(() => ChatManager.instance.isended); ChatManager.instance.isended = false;
 
-        KeyCardManager.instance.getkeycard();
+        KeycardManager.instance.getkeycard();
 
         yield return wait;
         yield return wait;

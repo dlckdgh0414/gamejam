@@ -31,8 +31,10 @@ public class CardFind : MonoBehaviour
 
     private void Initialize()
     {
-        int rand = Random.Range(0, _cardList.Count);
+        int rand = Random.Range(0, 3);
         _currentCard = _cardList[rand];
+
+        Debug.Log(rand);
 
         _name = _currentCard.cardName;
         nametext.text =  $"<size=200%>{_name}<size=100%>를 선택하세요 ";

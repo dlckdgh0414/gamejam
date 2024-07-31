@@ -116,7 +116,7 @@ MonoBehaviour:
   - {x: -4.999971, y: -28, z: 0}
   m_ShapePathHash: 1403508590
   m_Mesh: {fileID: 0}
-  m_InstanceId: 57434
+  m_InstanceId: 151064
   m_LocalBounds:
     m_Center: {x: 0.5, y: -21, z: 0}
     m_Extent: {x: 5.5, y: 7, z: 0}
@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2515975394206398008}
   - component: {fileID: 3069185803351283000}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Stage3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ MonoBehaviour:
   - {x: -9.99997, y: 6, z: 0}
   m_ShapePathHash: -1193305425
   m_Mesh: {fileID: 0}
-  m_InstanceId: 57320
+  m_InstanceId: 150950
   m_LocalBounds:
     m_Center: {x: -0.5, y: 10.5, z: 0}
     m_Extent: {x: 9.5, y: 4.5, z: 0}
@@ -508,7 +508,7 @@ MonoBehaviour:
   - {x: -9.99997, y: -9, z: 0}
   m_ShapePathHash: -601274733
   m_Mesh: {fileID: 0}
-  m_InstanceId: 57388
+  m_InstanceId: 151018
   m_LocalBounds:
     m_Center: {x: -0.5, y: -4.5, z: 0}
     m_Extent: {x: 9.5, y: 4.5, z: 0}
@@ -618,7 +618,7 @@ MonoBehaviour:
   - {x: 26.000029, y: -17, z: 0}
   m_ShapePathHash: -835656924
   m_Mesh: {fileID: 0}
-  m_InstanceId: 57416
+  m_InstanceId: 151046
   m_LocalBounds:
     m_Center: {x: 33.999985, y: -8.5, z: 0}
     m_Extent: {x: 7.9999866, y: 8.5, z: 0}
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 7132412624438803481}
   - component: {fileID: 6463913488681701112}
   - component: {fileID: 3324703167537875267}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
