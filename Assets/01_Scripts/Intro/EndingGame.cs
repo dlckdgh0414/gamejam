@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class EndingGame : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    [SerializeField] List<GameObject> gameObjects;
+
     void Start()
     {
-        
+        if (EnemyKillCounter.instance.killCount == 20)
+        {
+            gameObjects[0].SetActive(true);
+        }
+        else if (EnemyKillCounter.instance.killCount == 0)
+        {
+            gameObjects[1].SetActive(true);
+        }
+        else
+        {
+            gameObjects[2].SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
