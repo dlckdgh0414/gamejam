@@ -27,6 +27,7 @@ public class KeycardManager : MonoBehaviour
     {
         if (_keycard == false)
         {
+            alarm.text = "이미 키카드를 가지고 있습니다";
             alarm.DOFade(1, 1);
             keycard.SetActive(true);
             _keycard = true;
@@ -34,7 +35,9 @@ public class KeycardManager : MonoBehaviour
         }
         else
         {
-
+            alarm.DOFade(1, 1);
+            alarm.text = "이미 키카드를 가지고 있습니다";
+            alarm.DOFade(0, 1).SetDelay(2);
         }
     }
 
