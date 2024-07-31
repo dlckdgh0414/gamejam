@@ -21,6 +21,7 @@ public class CheckButton : MonoBehaviour
     [SerializeField] TextMeshProUGUI bad;
     [SerializeField] FuelHandler fuel;
     [SerializeField] ParticleSystem _particle;
+    [SerializeField] Transform _playerTrm;
 
     public UnityEvent OnFailEvent;
 
@@ -96,7 +97,10 @@ public class CheckButton : MonoBehaviour
     {
         StartCoroutine(ShowResult(true));
 
-        Instantiate(_particle, transform.position, Quaternion.identity);
+        ParticleSystem particle = Instantiate(_particle,
+            _playerTrm.position, Quaternion.identity, _playerTrm);
+
+        particle.Play();
         fuel.fuel -= 5;
 
         OnFailEvent?.Invoke();
