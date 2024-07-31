@@ -15,6 +15,8 @@ public class Interact : MonoBehaviour
         movement = GetComponent<PlayerMovement>();
     }
 
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -45,7 +47,7 @@ public class Interact : MonoBehaviour
 
     IEnumerator talkwith()
     {
-
+    
         _istalking = true;
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = false;
         WaitForSeconds wait = new WaitForSeconds(1);
