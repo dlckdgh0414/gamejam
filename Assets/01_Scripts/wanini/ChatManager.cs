@@ -15,10 +15,8 @@ public class ChatManager : MonoBehaviour
     [SerializeField] private TMP_Text _name;
     [SerializeField] private RawImage fade;
     [SerializeField] private List<string> chat;
+
     public PlayerLight _Light;
-
-
-
     public bool isended;
     public bool isclosed;
     public bool _canskip;
@@ -38,7 +36,7 @@ public class ChatManager : MonoBehaviour
             instance = this;
         }
 
-        //dStartCoroutine(Test());
+        StartCoroutine(Test());
     }
 
     public void StartBtn()
@@ -107,7 +105,6 @@ public class ChatManager : MonoBehaviour
     {
         chatwindow.DOAnchorPos(new Vector2(0, -450), 1f).SetEase(Ease.OutSine);
         isclosed = false;
-
         _Light.PlayerLightInts?.Invoke();
     }
 
