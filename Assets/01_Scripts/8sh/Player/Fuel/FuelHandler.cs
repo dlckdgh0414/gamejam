@@ -8,7 +8,6 @@ public class FuelHandler : MonoBehaviour
 {
     public event Action<int> OnFuelChanged;
     public UnityEvent OnDead;
-    private PlayerState playerState;
 
     [Header("Values")]
     public bool active = true;
@@ -24,7 +23,6 @@ public class FuelHandler : MonoBehaviour
     {
         waitForSecondsRealtime = new WaitForSecondsRealtime(decreasePerSeconds);
         fuel = maxFuel;
-        playerState = GetComponent<PlayerState>();
         StartCoroutine(DecreaseFuel(fuel));
 
     }
@@ -52,7 +50,6 @@ public class FuelHandler : MonoBehaviour
             OnFuelChanged?.Invoke(fuel);
             active = false;
             OnDead?.Invoke();
-            playerState.Death();
         }
     }
 }
