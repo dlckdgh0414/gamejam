@@ -38,7 +38,7 @@ public class ChatManager : MonoBehaviour
             instance = this;
         }
 
-        StartCoroutine(Test());
+        //dStartCoroutine(Test());
     }
 
     public void StartBtn()
