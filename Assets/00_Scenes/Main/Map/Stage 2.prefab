@@ -92,7 +92,7 @@ MonoBehaviour:
   - {x: 3.0000293, y: -17, z: 0}
   m_ShapePathHash: 2089298684
   m_Mesh: {fileID: 0}
-  m_InstanceId: 70696
+  m_InstanceId: 150328
   m_LocalBounds:
     m_Center: {x: -1.5, y: -11, z: 0}
     m_Extent: {x: 10.5, y: 6, z: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7593915142020541010}
   - component: {fileID: 3016436730892426443}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Stage 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12704,7 +12704,7 @@ MonoBehaviour:
   - {x: -4.999971, y: 5, z: 0}
   m_ShapePathHash: -544499247
   m_Mesh: {fileID: 0}
-  m_InstanceId: 70738
+  m_InstanceId: 150370
   m_LocalBounds:
     m_Center: {x: 1.5, y: 11, z: 0}
     m_Extent: {x: 11.5, y: 6, z: 0}
@@ -12723,7 +12723,7 @@ GameObject:
   - component: {fileID: 3487254050310880890}
   - component: {fileID: 1633792723547835386}
   - component: {fileID: 8282642257237276090}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
