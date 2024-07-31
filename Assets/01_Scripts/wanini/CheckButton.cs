@@ -31,12 +31,11 @@ public class CheckButton : MonoBehaviour
 
     private void Update()
     {
-       if (_already && Input.GetKeyDown(KeyCode.F))
-            {
-                Initialized();
+        if (_already && Input.GetKeyDown(KeyCode.F))
+        {
+            Initialized();
             _already2 = false;
-            }
-
+        }
     }
 
     private void Awake()
@@ -50,8 +49,9 @@ public class CheckButton : MonoBehaviour
     public void lego() // 버튼 생성
     {
         _already2 = true;
-        father.DOScale(new Vector2(0.6817501f, 0.8f), 0.2f).SetEase(Ease.InBounce);
-        question.DOScale(new Vector2(1, 1), 0.2f).SetEase(Ease.InBounce).SetDelay(0.6f);
+        _already = false; // Add this line to reset _already
+        father.DOScale(new Vector2(0.6817501f, 0.3f), 0.2f).SetEase(Ease.InBounce);
+        question.DOScale(new Vector2(1, 2.73f), 0.2f).SetEase(Ease.InBounce).SetDelay(0.6f);
         success = false;
         // 플레이어 멈추기
     }
@@ -69,12 +69,12 @@ public class CheckButton : MonoBehaviour
     IEnumerator Check() // 미션창 띄우기
     {
         yield return new WaitForSeconds(.5f);
-        question.DOScale(new Vector2(1, 0), 0.2f).SetEase(Ease.InBounce);
+        question.DOScale(new Vector2(0, 0), 0.2f).SetEase(Ease.InBounce);
         yield return new WaitForSeconds(.4f);
-        _already = false;
-        stroke.DOSizeDelta(new Vector2(stroke.rect.width, 1711.25f), 0.5f);
-        back.DOSizeDelta(new Vector2(back.rect.width, 2274f), 0.5f);
-        back.DOAnchorPos(new Vector2(113.68f, -407), 0.5f);
+        father.DOScale(new Vector2(0.6817501f, 0.8f), 0.2f).SetEase(Ease.InBounce);
+
+        stroke.DOSizeDelta(new Vector2(1367, 1338.75f), 0.5f);
+        back.DOSizeDelta(new Vector2(3018.52f, 2448), 0.5f);
 
         yield return new WaitForSeconds(0.2f);
         canvasGroup.DOFade(1, 0.1f);
@@ -85,19 +85,18 @@ public class CheckButton : MonoBehaviour
 
     public void Initialized() // 미션창 초기화 (위치 등)
     {
-
-        back.sizeDelta = new Vector2(2193.13f, 913.59f);
-        stroke.sizeDelta = new Vector2(2030.79f, 717f);
-
+        back.sizeDelta = new Vector2(3021f, 2448f);
+        stroke.sizeDelta = new Vector2(1367f, 1338.75f);
+        question.DOScale(new Vector2(0, 0), 0.2f);
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = true;
 
         foreach (GameObject cards in card)
         {
             cards.SetActive(false);
         }
+        check.DOFade(0, .5f);
         canvasGroup.alpha = 0;
-
-    
+        _already = false; // Add this line to reset _already
     }
 
     public void Good() // 성공

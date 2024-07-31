@@ -15,8 +15,9 @@ public class ChatManager : MonoBehaviour
     [SerializeField] private TMP_Text _name;
     [SerializeField] private RawImage fade;
     [SerializeField] private List<string> chat;
+    private string[] dogback = { "이곳을 나가겠어", "동정심이란 무엇일까..?", "이런 것이 감정이라는 걸까?", "감정을 이해하게 된다..", "감정은 이런 것이구나..", };
 
-
+    public int countss = 0;
     public bool isended;
     public bool isclosed;
     public bool _canskip;
@@ -110,11 +111,11 @@ public class ChatManager : MonoBehaviour
 
     public IEnumerator Test()
     {
-        OpenChat("");
+        OpenChat("AE70");
         yield return new WaitUntil(() => isclosed);
         isclosed = false;
         yield return new WaitForSeconds(0.5f);
-        StartCoroutine(Typing("여기서 나가겠어.", 0.1f));
+        StartCoroutine(Typing(dogback[countss], 0.1f));
         yield return new WaitUntil(() => isended);
         isended = false;
         yield return new WaitForSeconds(1.5f);

@@ -9,7 +9,7 @@ public class ExitDoor : MonoBehaviour
     private bool canOpen = false;
     private bool enable = true;
     private Animator _anim;
-    public int ScenNum;
+    public string ScenNum;
 
     private void Awake()
     {
@@ -39,6 +39,8 @@ public class ExitDoor : MonoBehaviour
                 GetComponent<AudioSource>().Play();
                 _anim.SetBool("Open", true);
                 SceneManager.LoadScene(ScenNum);
+                ChatManager.instance.countss =+ 1;
+
             }
         }
     }
