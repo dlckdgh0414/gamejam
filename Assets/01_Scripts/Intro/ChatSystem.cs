@@ -68,11 +68,6 @@ public class ChatSystem : MonoBehaviour
         _isclosed = true;
     }
 
-    public void Type(string text, float rate)
-    {
-        StartCoroutine(Typing(text, rate));
-    }
-
     public IEnumerator Typing(string text, float rate)
     {
         txtObj.text = "";
