@@ -56,15 +56,15 @@ public class CheckButton : MonoBehaviour
 
     IEnumerator Check() // 미션창 띄우기
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.5f);
         question.DOScale(new Vector2(1, 0), 0.2f).SetEase(Ease.InBounce);
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(.4f);
         _already = false;
         stroke.DOSizeDelta(new Vector2(stroke.rect.width, 1711.25f), 1);
         back.DOSizeDelta(new Vector2(back.rect.width, 2274f), 1);
         back.DOAnchorPos(new Vector2(113.68f, -407), 1);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         canvasGroup.DOFade(1, 0.1f);
         yield return new WaitForSeconds(0.3f);
         card[Random.Range(0, card.Count)].SetActive(true); // 카드 선택 범위 수정
@@ -81,6 +81,8 @@ public class CheckButton : MonoBehaviour
             cards.SetActive(false);
         }
         canvasGroup.alpha = 0;
+
+        GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().active = true;
     }
 
     public void Good() // 성공
@@ -95,27 +97,27 @@ public class CheckButton : MonoBehaviour
 
     IEnumerator ShowResult(bool isBad) // 결과 표시
     {
-        canvasGroup.DOFade(1, 1);
-        yield return new WaitForSeconds(0.5f);
+        canvasGroup.DOFade(1, .5f);
+        yield return new WaitForSeconds(0.2f);
 
         if (isBad)
         {
             success = false;
-            bad.DOFade(1, 1);
-            yield return new WaitForSeconds(1);
-            bad.DOFade(0, 1);
+            bad.DOFade(1, .5f);
+            yield return new WaitForSeconds(.5f);
+            bad.DOFade(0, .5f);
         }
         else
         {
             success = true;
-            good.DOFade(1, 1);
-            yield return new WaitForSeconds(1.5f);
-            good.DOFade(0, 1);
+            good.DOFade(1, .5f);
+            yield return new WaitForSeconds(.5f);
+            good.DOFade(0, .5f);
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         father.DOScale(new Vector2(0.6817501f, 0f), 0.2f).SetEase(Ease.InBounce);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
 
         Initialized();
     }
