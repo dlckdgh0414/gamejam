@@ -58,13 +58,7 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: DoorContorl
   serializedVersion: 5
-  m_AnimatorParameters:
-  - m_Name: Open
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+  m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -116,10 +110,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7765515330815371291}
-    m_Position: {x: 260, y: 150, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 4234533137514053033}
-    m_Position: {x: 235, y: 65, z: 0}
+    m_Position: {x: 300, y: 40, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -129,7 +120,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 4234533137514053033}
+  m_DefaultState: {fileID: 7765515330815371291}
 --- !u!1102 &7765515330815371291
 AnimatorState:
   serializedVersion: 6
@@ -140,8 +131,7 @@ AnimatorState:
   m_Name: DoorAnim
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -8488207214701506840}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
