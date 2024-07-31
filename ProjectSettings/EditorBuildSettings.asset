@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/00_Scenes/MainYWH.unity
     guid: 276570f3c95f2954084f1e40705b6ad4
   - enabled: 1
-    path: Assets/00_Scenes/Main/Stages/Stage1.unity
-    guid: f1fdcd63978a24944bfee6cac4212cb7
+    path: Assets/00_Scenes/Main/Stages/Stage1_REMOTE_556.unity
+    guid: f40f7e375ae6e474b99eb57b8c3fa69b
   - enabled: 1
     path: Assets/00_Scenes/Main/Stages/Stage2.unity
     guid: 9ccafc089b4c87f4aab9708131a8dd16
