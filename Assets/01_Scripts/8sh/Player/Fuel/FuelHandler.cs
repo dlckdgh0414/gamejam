@@ -9,6 +9,7 @@ public class FuelHandler : MonoBehaviour
     public event Action<int> OnFuelChanged;
     public UnityEvent OnDead;
     private PlayerState playerState;
+    public UnityEvent OnTalk;
 
     [Header("Values")]
     public bool active = true;
@@ -54,5 +55,11 @@ public class FuelHandler : MonoBehaviour
             OnDead?.Invoke();
             playerState.Death();
         }
+    }
+
+    public void TalkFule()
+    {
+        maxFuel = fuel;
+        StopAllCoroutines();
     }
 }
